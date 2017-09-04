@@ -1,19 +1,180 @@
-<!DOCTYPE html>
-<html lang="pl">
+<html>
 <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Cash Guardian</title>
     <meta charset="UTF-8">
-    <title>nawigacja</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-<section>
-    <nav>
-        <ul>
-            <li><a href="#">Pierwsza opcja</a></li>
-            <li><a href="#">Druga opcja</a></li>
-            <li><a href="#">Trzecia opcja</a></li>
-            <li><a href="#">Czwarta opcja</a></li>
-        </ul>
-    </nav>
+
+<section class="top">
+    <div class="container">
+        <a href="#top">$</a>
+        <nav id="nav">
+            <ul>
+                <li><a href="#" id="clientPositionY"></a></li>
+                <li><a href="#info">Informacje o produkcie</a></li>
+                <li><a href="#" id="notExist">Dodatkowe informacje</a></li>
+                <li><a href="#team">Zespól</a></li>
+            </ul>
+            <a id="toTop" href="#top">
+                Do góry
+                <i class="fa fa-arrow-up" aria-hidden="true"></i>
+            </a>
+        </nav>
+    </div>
 </section>
+
+<a name="top"></a>
+
+<header class="hero">
+    <section>
+        <h1>Najchwytliwszy tekst</h1>
+        <p>na świecie</p>
+    </section>
+</header>
+
+<a name="info"></a>
+
+<section class="container">
+    <h2>Informacje o produkcie</h2>
+    <div class="features">
+        <section>
+            <h3>Lorem Ipsum</h3>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+        </section>
+        <section>
+            <h3>Lorem Ipsum</h3>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+        </section>
+        <section>
+            <h3>Lorem Ipsum</h3>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+        </section>
+        <section>
+            <h3>Lorem Ipsum</h3>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+        </section>
+        <section>
+            <h3>Lorem Ipsum</h3>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+        </section>
+        <section>
+            <h3>Lorem Ipsum</h3>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+        </section>
+        <section>
+            <h3>Lorem Ipsum</h3>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+        </section>
+        <section>
+            <h3>Lorem Ipsum</h3>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+        </section>
+    </div>
+</section>
+
+<a name="team"></a>
+
+<section class="team">
+    <h2>Zespół</h2>
+    <div class="container">
+        <div class="layer">
+            <section>
+                <img src="https://static.pexels.com/photos/91227/pexels-photo-91227.jpeg" alt="Front-End Developer">
+                <div>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    </p>
+                </div>
+                <h3>Front-End Developer</h3>
+            </section>
+        </div>
+        <div class="layer">
+            <section>
+                <img src="https://static.pexels.com/photos/301284/pexels-photo-301284.jpeg" alt="Back-End Developer">
+                <div>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    </p>
+                </div>
+                <h3>Back-End Developer</h3>
+            </section>
+        </div>
+        <div class="layer">
+            <section>
+                <img src="https://static.pexels.com/photos/206542/pexels-photo-206542.jpeg" alt="Tester">
+                <div>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    </p>
+                </div>
+                <h3>Tester</h3>
+            </section>
+        </div>
+
+    </div>
+</section>
+
+<section class="newsletter">
+    <h3>Zapisz się na newsletter</h3>
+    <form>
+        <label>Email Adress</label><input type="email">
+        <label>Imię</label><input type="email">
+    </form>
+</section>
+
+
+<footer>
+    <p>Projekt i wykonanie Piotr Siwek</p>
+</footer>
+
+<script>
+    var notExist = document.getElementById('notExist');
+    notExist.addEventListener("click", function(){
+        alert("Ta część nie jest jeszcze skonczona");
+    });
+
+    var toTop = document.getElementById('toTop');
+    var clientPositionY = document.getElementById('clientPositionY');
+    var nav = document.getElementById('nav');
+
+    document.addEventListener('scroll', mouseMoveHandler);
+
+    function mouseMoveHandler(){
+
+
+        var clientY = window.scrollY;
+        clientPositionY.innerHTML = clientY;
+
+        if (clientY > 600)
+            toTop.className = 'show';
+        else
+            toTop.className = '';
+
+        if (clientY > 300)
+            nav.className = 'big';
+        else
+            nav.className = '';
+    }
+
+</script>
 </body>
 </html>
