@@ -1,0 +1,10 @@
+.flex_container {
+    display: flex;
+    justify-content: space-around;
+}
+.flex_item {
+
+}
+.face {
+    width: 98%;
+}
