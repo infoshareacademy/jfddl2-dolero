@@ -8,17 +8,24 @@ body, html {
 
     background-image: url("img/2017-31-08-18-02-49.jpeg");
 
-    padding: 150px 50px;
-    margin-top: 40px;
+    height: 100%;
+    margin-top: 0px;
 
     background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
 }
+.hero-image2 {
+    border-radius: 20px;
+    background-image: url("img/2017-31-08-18-03-18.jpeg");
+    height: 100%;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
 
+}
 
 .hero-text {
-
     text-align: center;
     color: white;
 }
@@ -26,9 +33,29 @@ body, html {
     margin-top: 0;
 }
 
-
+h1{
+    width: auto;
+    font-family:"Montserrat";
+    font-size: 200px;
+    padding-top: 150px
+}
 p {
 
-    font-family: "Roboto Slab";
+    font-family: "Montserrat";
+    font-size: 50px;
+}
+#slideshow {
+    margin: 50px auto;
+    position: relative;
 
+    height: 90%;
+    padding: 0px;
+
+}
+#slideshow > div {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
 }
