@@ -6,6 +6,8 @@
 body {
     margin: 0;
     padding: 0;
+    font-size: 1em;
+    position: relative;
 }
 .container {
     max-width: 1200px;
@@ -69,7 +71,7 @@ section.top div.container  a {
     transition: all .6s;
     display: inline-block;
     line-height: 60px;
-    font-weight: bold;
+    font-size: 1em;
 }
 
 section.top div.container a:hover {
@@ -78,7 +80,7 @@ section.top div.container a:hover {
 }
 
 section.top div.container > a {
-    font-size: 40px;
+    font-size: 2em;
 }
 
 section.top div.container nav > a {
@@ -149,7 +151,7 @@ section div.features {
 }
 
 section div.features section {
-    max-width: 280px;
+    max-width: 23%;                        /* TUTAJ !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
     padding: 30px;
     text-align: center;
     background-color: #14213d;
@@ -236,31 +238,98 @@ section.team div section p {
 }
 /*end of section team*/
 /* section newsletter */
-    section.newsletter {
-        background-color: #14213d;
-        min-height: 400px;
-    }
-    section.newsletter form {
-        border: solid 2px red;
-        max-width: 400px;
-        padding: 0;
-    }
-    section.newsletter label {
-        color: #e5e5e5;
-        text-align: left;
-        display: block;
-        text-transform: uppercase;
-        padding-left: 10%;
-    }
 
-    section.newsletter input {
-        padding: 5px 10px;
-        width: 80%;
-        display: block;
-        margin: 0 auto 5% auto;
-    }
+section.newsletter {
+    background-color: #14213d;
+    height: 20vh;
+    width: 100%;
+}
+
+section.newsletter h2 span {
+    color: #e5e5e5;
+    text-transform: uppercase;
+}
+
+section.newsletter-pop-up {
+    background-color: #14213d;
+    min-height: 30vh;
+    width: 50%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 200;
+    border-radius: 20px;
+}
+
+section.newsletter-pop-up h3 {
+    font-size: 2em;
+}
+
+section.newsletter-pop-up h3:after {
+    content: '';
+    position: absolute;
+    top: 20%;
+    left: 35%;
+    width: 30%;
+    height: .05em;ve
+    background-color: #e5e5e5;;
+}
+
+section.newsletter-pop-up i {
+    color: #ff1f11;
+    position: absolute;
+    top: 8%;
+    right: 5%;
+    font-size: 2.4em;
+    transition: all .8s;
+}
+
+section.newsletter-pop-up i:hover {
+    cursor: pointer;
+    -ms-transform: scale(1.2) rotate(360deg); /* IE 9 */
+    -webkit-transform: scale(1.2) rotate(360deg); /* Chrome, Safari, Opera */
+    transform: scale(1.2) rotate(360deg);
+    /*animation: rotate;*/
+    /*animation-iteration-count: infinite;*/
+    /*animation-direction: alternate;*/
+    /*animation-duration: 1s;*/
+}
+
+/*@keyframes rotate {*/
+    /*0% { transform: rotate(0); }*/
+    /*100% { transform: rotate(360deg); }*/
+/*}*/
+
+section.newsletter-pop-up form {
+    padding-top: 5%;
+}
+
+section.newsletter-pop-up label {
+    color: #e5e5e5;
+    text-align: left;
+    display: block;
+    text-transform: uppercase;
+    padding-left: 10%;
+}
+
+section.newsletter-pop-up input {
+    padding: 5px 10px;
+    width: 80%;
+    display: block;
+    margin: 0 auto 5% auto;
+}
+
+section.newsletter-pop-up input.newsletter-btn-success {
+    max-width: 30%;
+    background-color: #fca311;
+    padding: 1em 0;
+    border-radius: 10px
+}
+
 /* section newsletter */
 /* footer */
+
 footer {
     text-align: center;
 }
