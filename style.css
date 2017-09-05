@@ -1,7 +1,5 @@
 body {
-    max-width: 1200px;
-    margin: auto;
-    padding: 0;
+
 }
 
 .container {
@@ -9,6 +7,8 @@ body {
     flex-direction: column;
     max-width: 1200px;
     min-width: 320px;
+    margin: auto;
+    padding: 0;
 
 }
 
@@ -25,17 +25,65 @@ body {
     opacity: 1;
 }
 
+.bg1 {
+    background-image: url('images/notification.jpg');
+    background-size: cover;
+    border-radius: 10% 0 0 10%;
+    height: 100%;
+    padding-right: 50%;
+    background-position: center;
+}
+
+.bg2 {
+    background-image: url('images/saving.jpg');
+    background-size: cover;
+    height: 100%;
+    padding-left: 50%;
+    border-radius: 0 10% 10% 0;
+    background-position: center;
+}
+
+.bg3 {
+    background-image: url('images/currency.jpg');
+    background-size: cover;
+    border-radius: 10% 0 0 10%;
+    height: 100%;
+    padding-right: 50%;
+    background-position: center;
+}
+
+.bg4 {
+    background-image: url('images/reports.jpg');
+    background-size: cover;
+    height: 100%;
+    padding-left: 50%;
+    border-radius: 0 10% 10% 0;
+    background-position: center;
+}
+
+.bg5 {
+    background-image: url('images/alerts.jpg');
+    background-size: cover;
+    border-radius: 10% 0 0 10%;
+    height: 100%;
+    padding-right: 50%;
+    background-position: center;
+}
+
+.bg6 {
+    background-image: url('images/couple.jpg');
+    background-size: cover;
+    height: 100%;
+    padding-left: 50%;
+    border-radius: 0 10% 10% 0;
+    background-position: center;
+}
+
 .box {
     width: 50%;
     height: 100%;
-    flex-basis: 50%;
-    border-radius: 30px;
-    /*background-color: rgba(9, 255, 252, 0.26);*/
-    /* gwiazdka w środku*/
-
-}
-
-.textbox {
+    flex-basis: 100%;
+    border-radius: 10%;
     display: inline-block;
     text-align: center;
     opacity: 1;
@@ -43,7 +91,7 @@ body {
 }
 
 .table {
-    height: 80%;
+    max-height: 80%;
     display: table;
 }
 
@@ -51,32 +99,20 @@ div.table p {
     display: table-cell;
     vertical-align: top;
     padding: 0 30px;
-    text-align: justify;
-    text-decoration-style: solid;
+    text-align: left;
 
 }
 
 div.box h2 {
-    font-size: 2.5rem;
+    font-size: 2.5em;
 
 }
 
 div.box p {
-    font-size: 1.5rem;
+    font-size: 1.5em;
     margin: auto;
     padding-right: 10%;
     color: #14213d;
-
-}
-
-div.box img {
-    max-width: 100%;
-    max-height: 100%;
-
-}
-
-div.box img:hover {
-    opacity: 1;
 
 }
 
@@ -98,23 +134,83 @@ div.box img:hover {
     border-radius: 0 40px 40px 0;
 }
 
-section {
-    max-width: 100%;
-}
-
-.title {
-    display: block;
-    width: 100%;
-}
-
 .projectinfo {
+
+    font-size: 1.5rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.bg_pinfo {
     width: 100%;
     background-color: #e5e5e5;
-    font-size: 1.5rem;
-    border-radius: 40px;
 }
 
 .projectinfo h2 {
     width: 100%;
     text-align: center;
+}
+
+@media screen and (max-width:720px) {
+    .bg1 {
+        background-image:none;
+        background-size: cover;
+        border-radius: 10% 0 0 10%;
+        height: 100%;
+        padding-right: 0;
+        background-position: center;
+    }
+
+    .bg2 {
+        background-image:none;
+        background-size: cover;
+        height: 100%;
+        padding-left: 0;
+        border-radius: 0 10% 10% 0;
+        background-position: center;
+    }
+
+    .bg3 {
+        background-image:none;
+        background-size: cover;
+        border-radius: 10% 0 0 10%;
+        height: 100%;
+        padding-right: 0;
+        background-position: center;
+    }
+
+    .bg4 {
+        background-image:none;
+        background-size: cover;
+        height: 100%;
+        padding-left: 0;
+        border-radius: 0 10% 10% 0;
+        background-position: center;
+    }
+
+    .bg5 {
+        background-image:none;
+        background-size: cover;
+        border-radius: 10% 0 0 10%;
+        height: 100%;
+        padding-right: 0;
+        background-position: center;
+    }
+
+    .bg6 {
+        background-image:none;
+        background-size: cover;
+        height: 100%;
+        padding-left: 0;
+        border-radius: 0 10% 10% 0;
+        background-position: center;
+    }
+    .lback {
+        border-radius: 40px;
+    }
+
+    .dback {
+
+        border-radius: 40px;
+
 }
