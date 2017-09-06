@@ -2,9 +2,22 @@
     display: flex;
     justify-content: space-around;
 }
-.flex_item {
+.flex_item:hover {
+    transform: scale(1.1);
+    color: brown;
+}
+p {
+    color: brown;
+}
+.photo {
+    width: 90%;
+    background-color: brown;
+}
+.photo:hover{
+    padding: 5px;
 
 }
-.face {
-    width: 98%;
+.photo-details{
+    width: 90%;
+    text-align: center;
 }
