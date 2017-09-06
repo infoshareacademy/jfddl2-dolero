@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
 <head>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -10,13 +11,13 @@
 
 <section class="top">
     <div class="container">
-        <a href="#top">$</a>
+        <a id="mainLogo">$</a>
         <nav id="nav">
             <ul>
                 <li><a href="#" id="clientPositionY"></a></li>
-                <li><a href="#info">Informacje o produkcie</a></li>
-                <li><a href="#" id="notExist">Dodatkowe informacje</a></li>
-                <li><a href="#team">Zespól</a></li>
+                <li><a id="info" href="#info">Informacje o produkcie</a></li>
+                <li><a id="additionalInfo"href="#" id="notExist">Dodatkowe informacje</a></li>
+                <li><a id="team" href="#team">Zespól</a></li>
             </ul>
             <a id="toTop" href="#top">
                 Do góry
@@ -37,7 +38,7 @@
 
 <a name="info"></a>
 
-<section class="container">
+<section class="info container">
     <h2>Informacje o produkcie</h2>
     <div class="features">
         <section>
@@ -138,12 +139,12 @@
         </div>
         <div class="layer">
             <section>
-                <img src="https://static.pexels.com/photos/206542/pexels-photo-206542.jpeg" alt="Tester">
                 <div>
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                         labore et dolore magna aliqua.
-                    </p>
+                    </p>                <img src="https://static.pexels.com/photos/206542/pexels-photo-206542.jpeg" alt="Tester">
+
                 </div>
                 <h3>Tester</h3>
             </section>
@@ -154,14 +155,15 @@
 
 <section class="newsletter">
     <h2>Nie zwlekaj! Zapisz się na newsletter<span> już dziś!</span></h2>
+    <input id="showNewsletter" class="newsletter-btn-success" type="submit" value="Przejdź">
 
-    <section class="newsletter-pop-up">
+    <section id="sectionNewsletter" class="newsletter-pop-up">
 
         <h3>Zapisz się na newsletter</h3>
-        <i class="fa fa-times" aria-hidden="true"></i>
+        <i id="hideNewsletter" class="fa fa-times" aria-hidden="true"></i>
         <form>
             <label>Email Adress</label><input type="email">
-            <label>Imię</label><input type="email">
+            <label>Imię</label><input type="text">
             <input class="newsletter-btn-success" type="submit" value="Wyślij">
         </form>
 
@@ -173,35 +175,69 @@
     <p>Projekt i wykonanie Piotr Siwek</p>
 </footer>
 
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script>
-    var notExist = document.getElementById('notExist');
-    notExist.addEventListener("click", function () {
-        alert("Ta część nie jest jeszcze skonczona");
-    });
-
     var toTop = document.getElementById('toTop');
     var clientPositionY = document.getElementById('clientPositionY');
     var nav = document.getElementById('nav');
 
     document.addEventListener('scroll', mouseMoveHandler);
-
     function mouseMoveHandler() {
 
-
-        var clientY = window.scrollY;
+        clientY = window.scrollY;
         clientPositionY.innerHTML = clientY;
 
         if (clientY > 600)
             toTop.className = 'show';
         else
             toTop.className = '';
-
         if (clientY > 300)
             nav.className = 'big';
         else
             nav.className = '';
     }
+
+    var hideNewsletter = document.getElementById('hideNewsletter');
+    var showNewsletter = document.getElementById('showNewsletter');
+    var sectionNewsletter = document.getElementById('sectionNewsletter');
+
+    hideNewsletter.addEventListener('click', function(){
+//        sectionNewsletter.style.display = "none";
+        sectionNewsletter.style.left = '-50%';
+    });
+    showNewsletter.addEventListener('click', function(){
+//        sectionNewsletter.style.display = "block";
+        sectionNewsletter.style.left = '50%';
+    });
+
+    //    jQuery slide to top
+
+
+    $("#toTop, #mainLogo").click(function() {
+        $("html, body").animate({ scrollTop: 0 }, "slow");
+        return false;
+    });
+
+    // jQuery slide to sections
+    $("#additionalInfo").click(function() {
+        $('html, body').animate({
+            scrollTop: $("section.additionalInfo").offset().top
+        }, 500);
+    });
+
+    $("#info").click(function() {
+        $('html, body').animate({
+            scrollTop: $("section.info").offset().top
+        }, 500);
+    });
+
+    $("#team").click(function() {
+        $('html, body').animate({
+            scrollTop: $("section.team").offset().top
+        }, 500);
+    });
+
+
 
 </script>
 </body>

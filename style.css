@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Mukta+Malar&subset=latin-ext');
+
 
 * {
     box-sizing: border-box;
@@ -8,6 +10,7 @@ body {
     padding: 0;
     font-size: 1em;
     position: relative;
+    font-family: 'Mukta Malar', sans-serif;
 }
 .container {
     max-width: 1200px;
@@ -57,7 +60,7 @@ section.top div.container ul {
     justify-content: flex-end;
     flex-wrap: wrap;
     margin: 0;
-   / line-height: 60px;
+
 }
 
 section.top div.container li {
@@ -94,6 +97,7 @@ section.top div.container nav > a {
     animation-direction: alternate;
     display: none;
     z-index: 1000;
+    border-radius: 5px;
 
 }
 
@@ -176,7 +180,7 @@ section div.features section h3::after {
 
 section div.features section:hover h3::before,
 section div.features section:hover h3::after{
-    color: #e5e5e5;;
+    color: #e5e5e5;
 }
 
 /*end of section features*/
@@ -242,8 +246,13 @@ section.team div section p {
 section.newsletter {
     background-color: #14213d;
     height: 20vh;
-    width: 100%;
+    width: 100
 }
+
+section.newsletter h2 {
+    padding-top: 3%;
+}
+
 
 section.newsletter h2 span {
     color: #e5e5e5;
@@ -253,13 +262,39 @@ section.newsletter h2 span {
 section.newsletter-pop-up {
     background-color: #14213d;
     min-height: 30vh;
-    width: 50%;
+    width: 30%;
     position: fixed;
     top: 50%;
-    left: 50%;
+    left: -50%;
     transform: translate(-50%, -50%);
     z-index: 200;
     border-radius: 20px;
+    border: 2px solid #e5e5e5;
+    /*display: none;*/
+    transition: .8s;
+}
+@media (max-width: 1400px) {
+    section.newsletter-pop-up {
+        width: 40%;
+    }
+}
+
+@media (max-width: 1050px) {
+    section.newsletter-pop-up {
+        width: 50%;
+    }
+}
+
+@media (max-width: 900px) {
+    section.newsletter-pop-up {
+        width: 70%;
+    }
+}
+
+@media (max-width: 620px) {
+    section.newsletter-pop-up {
+        width: 100%;
+    }
 }
 
 section.newsletter-pop-up h3 {
@@ -269,10 +304,10 @@ section.newsletter-pop-up h3 {
 section.newsletter-pop-up h3:after {
     content: '';
     position: absolute;
-    top: 20%;
+    top: 22%;
     left: 35%;
     width: 30%;
-    height: .05em;ve
+    height: .05em;
     background-color: #e5e5e5;;
 }
 
@@ -297,8 +332,8 @@ section.newsletter-pop-up i:hover {
 }
 
 /*@keyframes rotate {*/
-    /*0% { transform: rotate(0); }*/
-    /*100% { transform: rotate(360deg); }*/
+/*0% { transform: rotate(0); }*/
+/*100% { transform: rotate(360deg); }*/
 /*}*/
 
 section.newsletter-pop-up form {
@@ -320,13 +355,26 @@ section.newsletter-pop-up input {
     margin: 0 auto 5% auto;
 }
 
-section.newsletter-pop-up input.newsletter-btn-success {
+input.newsletter-btn-success {
     max-width: 30%;
     background-color: #fca311;
     padding: 1em 0;
-    border-radius: 10px
+    border-radius: 10px;
+    transition: .6s;
 }
 
+section.newsletter > input.newsletter-btn-success {
+    display: block;
+    margin: 0 auto;
+    max-width: 7em;
+    min-width: 7em;
+    transition: .6s;
+}
+
+input.newsletter-btn-success:hover {
+    cursor: pointer;
+    background-color: #ff0;
+}
 /* section newsletter */
 /* footer */
 
