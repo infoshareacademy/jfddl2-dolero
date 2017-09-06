@@ -2,24 +2,24 @@
 <html>
 <head>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
     <title>Cash Guardian</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
 
-<section class="top">
+<section id="top" class="top">
     <div class="container">
         <a id="mainLogo">$</a>
         <nav id="nav">
             <ul>
                 <li><a href="#" id="clientPositionY"></a></li>
-                <li><a id="info" href="#info">Informacje o produkcie</a></li>
-                <li><a id="additionalInfo"href="#" id="notExist">Dodatkowe informacje</a></li>
-                <li><a id="team" href="#team">Zespól</a></li>
+                <li><a data-scroll href="#info">Informacje o produkcie</a></li>
+                <li><a data-scroll href="#additionalInfo">Dodatkowe informacje</a></li>
+                <li><a data-scroll href="#team">Zespól</a></li>
             </ul>
-            <a id="toTop" href="#top">
+            <a data-scroll href="#top" id="slideTopBtn">
                 Do góry
                 <i class="fa fa-arrow-up" aria-hidden="true"></i>
             </a>
@@ -27,7 +27,7 @@
     </div>
 </section>
 
-<a name="top"></a>
+<a name="to3131p"></a>
 
 <header class="hero">
     <section>
@@ -36,9 +36,7 @@
     </section>
 </header>
 
-<a name="info"></a>
-
-<section class="info container">
+<section id="info" class="container">
     <h2>Informacje o produkcie</h2>
     <div class="features">
         <section>
@@ -108,9 +106,8 @@
     </div>
 </section>
 
-<a name="team"></a>
 
-<section class="team">
+<section id="team" class="team">
     <h2>Zespół</h2>
     <div class="container">
         <div class="layer">
@@ -161,9 +158,10 @@
 
         <h3>Zapisz się na newsletter</h3>
         <i id="hideNewsletter" class="fa fa-times" aria-hidden="true"></i>
-        <form>
-            <label>Email Adress</label><input type="email">
-            <label>Imię</label><input type="text">
+        <form action="https://formspree.io/pands.siwek@gmail.com"
+              method="POST">
+            <label>Email Adress</label><input name="email" type="email">
+            <label>Imię</label><input type="textarea" name="name">
             <input class="newsletter-btn-success" type="submit" value="Wyślij">
         </form>
 
@@ -176,8 +174,13 @@
 </footer>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="js/smooth-scroll.js"></script>
 <script>
-    var toTop = document.getElementById('toTop');
+//---------------SMOOTH SCROLL INIT------------------
+    var scroll = new SmoothScroll('a[href*="#"]');
+//---------------------------------------------------
+
+    var slideTopBtn = document.getElementById('slideTopBtn');
     var clientPositionY = document.getElementById('clientPositionY');
     var nav = document.getElementById('nav');
 
@@ -188,9 +191,9 @@
         clientPositionY.innerHTML = clientY;
 
         if (clientY > 600)
-            toTop.className = 'show';
+            slideTopBtn.className = 'show';
         else
-            toTop.className = '';
+            slideTopBtn.className = '';
         if (clientY > 300)
             nav.className = 'big';
         else
@@ -208,33 +211,6 @@
     showNewsletter.addEventListener('click', function(){
 //        sectionNewsletter.style.display = "block";
         sectionNewsletter.style.left = '50%';
-    });
-
-    //    jQuery slide to top
-
-
-    $("#toTop, #mainLogo").click(function() {
-        $("html, body").animate({ scrollTop: 0 }, "slow");
-        return false;
-    });
-
-    // jQuery slide to sections
-    $("#additionalInfo").click(function() {
-        $('html, body').animate({
-            scrollTop: $("section.additionalInfo").offset().top
-        }, 500);
-    });
-
-    $("#info").click(function() {
-        $('html, body').animate({
-            scrollTop: $("section.info").offset().top
-        }, 500);
-    });
-
-    $("#team").click(function() {
-        $('html, body').animate({
-            scrollTop: $("section.team").offset().top
-        }, 500);
     });
 
 

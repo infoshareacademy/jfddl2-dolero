@@ -218,7 +218,7 @@ section.team div div:hover p {
 /* animate */
 @keyframes move {
     0%   {top:100px; z-index: -10}
-    20% {z-index:1}
+
     100% {top:0; z-index: 2}
 }
 

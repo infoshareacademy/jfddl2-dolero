@@ -1,0 +1,18 @@
+div.long {
+    height: 300vh;
+    background-color: black;
+}
+
+.navbar {
+    background-color: #14213d;
+}
+
+.navbar-default .navbar-nav > li > a {
+    color: #fca311;
+}
+
+navbar-default .navbar-nav > li > a:hover {
+    color: #fffb37;
+}
+
+.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover
