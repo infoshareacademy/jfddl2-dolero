@@ -151,9 +151,9 @@ div.box p {
     text-align: center;
 }
 
-@media screen and (max-width:720px) {
+@media screen and (max-width: 720px) {
     .bg1 {
-        background-image:none;
+        background-image: none;
         background-size: cover;
         border-radius: 10% 0 0 10%;
         height: 100%;
@@ -162,7 +162,7 @@ div.box p {
     }
 
     .bg2 {
-        background-image:none;
+        background-image: none;
         background-size: cover;
         height: 100%;
         padding-left: 0;
@@ -171,7 +171,7 @@ div.box p {
     }
 
     .bg3 {
-        background-image:none;
+        background-image: none;
         background-size: cover;
         border-radius: 10% 0 0 10%;
         height: 100%;
@@ -180,7 +180,7 @@ div.box p {
     }
 
     .bg4 {
-        background-image:none;
+        background-image: none;
         background-size: cover;
         height: 100%;
         padding-left: 0;
@@ -189,7 +189,7 @@ div.box p {
     }
 
     .bg5 {
-        background-image:none;
+        background-image: none;
         background-size: cover;
         border-radius: 10% 0 0 10%;
         height: 100%;
@@ -198,13 +198,14 @@ div.box p {
     }
 
     .bg6 {
-        background-image:none;
+        background-image: none;
         background-size: cover;
         height: 100%;
         padding-left: 0;
         border-radius: 0 10% 10% 0;
         background-position: center;
     }
+
     .lback {
         border-radius: 40px;
     }
@@ -213,4 +214,4 @@ div.box p {
 
         border-radius: 40px;
 
-}
+    }}
