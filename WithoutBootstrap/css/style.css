@@ -246,7 +246,7 @@ section.team div section p {
 section.newsletter {
     background-color: #14213d;
     height: 20vh;
-    width: 100
+    width: 100%;
 }
 
 section.newsletter h2 {

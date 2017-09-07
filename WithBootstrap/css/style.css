@@ -1,3 +1,17 @@
+.show {
+    display: block !important;
+}
+
+.big {
+    max-height: 60px !important;
+    line-height: 60px !important;
+}
+
+a {
+    text-decoration: none;
+}
+
+/*------ section nav ------*/
 div.long {
     height: 300vh;
     background-color: black;
@@ -7,12 +21,59 @@ div.long {
     background-color: #14213d;
 }
 
+.navbar-default {
+    border-color: #0D1629;
+}
+
 .navbar-default .navbar-nav > li > a {
     color: #fca311;
+    transition: .4s;
 }
 
-navbar-default .navbar-nav > li > a:hover {
-    color: #fffb37;
+.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
+    color: #fafc1d;
+    transform: scale(1.2);
 }
 
-.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover
+nav.navbar > a {
+    position: fixed;
+    bottom: 5%;
+    right: 3%;
+    background-color: #14213d;
+    padding: 20px 15px;
+    animation: changeColors .7s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    display: none;
+    z-index: 1000;
+    border-radius: 5px;
+    color: #fca311;
+    font-weight: bold;
+}
+
+/*animation*/
+@keyframes changeColors {
+    0% { color: #ff0; }
+    100% { color: #fca311; }
+}
+
+/*------ end of section nav ------*/
+/*------ section newsletter ------*/
+
+section.newsletter {
+    background-color: #14213d;
+    height: 20vh;
+    width: 100%;
+}
+
+section.newsletter h2 {
+    padding-top: 3%;
+}
+
+
+section.newsletter h2 span {
+    color: #e5e5e5;
+    text-transform: uppercase;
+}
+
+/*------ end of section newsletter ------*/
