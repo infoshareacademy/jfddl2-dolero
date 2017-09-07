@@ -90,7 +90,7 @@ body {
 
 }
 
-.table {
+dib.box .table {
     max-height: 80%;
     display: table;
 }
@@ -127,61 +127,65 @@ div.box p {
     border-radius: 40px 0 0 40px;
 }
 
-
 /*.projectinfo {*/
 
-    /*font-size: 1.5rem;*/
-    /*max-width: 1200px;*/
-    /*margin: 0 auto;*/
+/*font-size: 1.5rem;*/
+/*max-width: 1200px;*/
+/*margin: 0 auto;*/
 /*}*/
 
 /*.bg_pinfo {*/
-    /*width: 100%;*/
-    /*background-color: #e5e5e5;*/
+/*width: 100%;*/
+/*background-color: #e5e5e5;*/
 /*}*/
 
 /*.projectinfo h2 {*/
-    /*width: 100%;*/
-    /*text-align: center;*/
+/*width: 100%;*/
+/*text-align: center;*/
 /*}*/
 .height {
     min-height: 20vh;
     width: 100%;
 
 }
+
 div.col-sm-12 h2 {
-    font-size:3.5em;
+    font-size: 3.5em;
     text-align: center;
     /*position:absolute;*/
     /*left:50%;*/
     /*transform: translateX(-50%);*/
     font-weight: bold;
 }
-.section-title h2{
-    font-size:3.5em;
+
+.section-title h2 {
+    font-size: 3.5em;
 
     text-align: center;
 
     font-weight: bold;
 }
+
 .section-title {
     min-height: 15vh;
     width: 100%;
 }
 
-col.col-sm-6 {
+div.addinfo .col-sm-6 {
     max-width: 400px;
 }
 
-.col-sm-3 {
+div.addinfo .col-sm-3 {
     height: 30vh;
     position: relative;
 
 }
+
 .addtitle {
     font-size: 2em;
     min-height: 20vh;
 }
+
 .greyback {
     background-color: #e5e5e5;
     width: 100%;
@@ -197,25 +201,24 @@ col.col-sm-6 {
 .bg-prof:hover .overlay {
     height: 100%;
 
-
 }
+
 .bg-rwd:hover .overlay {
     height: 100%;
 
-
 }
+
 .bg-boot:hover .overlay {
     height: 100%;
 
-
 }
+
 .bg-js:hover .overlay {
     height: 100%;
 
-
 }
 
-.overlay {
+div.addinfo .overlay {
 
     background-color: black;
     opacity: 0.7;
@@ -228,8 +231,8 @@ col.col-sm-6 {
     transition: 1s ease;
     overflow: hidden;
 
-
 }
+
 .text {
     color: white;
     position: absolute;
@@ -240,7 +243,6 @@ col.col-sm-6 {
     font-size: 1.5em;
     text-shadow: 3px 2px black;
 }
-
 
 .bg-rwd {
     background-image: url("../images/RWD.jpg");
@@ -263,9 +265,7 @@ col.col-sm-6 {
     /*background-color: white;*/
 }
 
-
-
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 780px) {
     .bg1 {
         background-image: none;
         background-size: cover;
@@ -328,8 +328,64 @@ col.col-sm-6 {
 
         border-radius: 40px;
 
+    }
 
-    }}
+    .bg-rwd {
+        background-image: none;
 
+    }
 
+    .bg-js {
+        background-image: none;
 
+        /*background-color: white;*/
+
+    }
+
+    .bg-boot {
+        background-image: none;
+
+        /*background-color: white;*/
+    }
+
+    .bg-prof {
+        background-image: none;
+
+    }
+
+    div.addinfo .col-sm-3 {
+        height: 3em;
+
+    }
+
+    div.addinfo .overlay {
+        transition: none;
+        overflow: auto;
+        position: static;
+        height: 100%;
+        opacity: 1;
+        background-color: transparent;
+    }
+
+    div.addinfo .text {
+        color: black;
+        text-shadow: none;
+        width: 100%;
+        text-align: center;
+
+    }
+
+    .panel {
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+
+    div.box p {
+        padding-right: 0;
+    }
+
+    .greyback {
+        border-radius: 10%;
+    }
+
+}
