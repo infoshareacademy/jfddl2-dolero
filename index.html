@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>Bootstrap 101 Template</title>
-    <!--Fontawesome-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
@@ -20,13 +20,15 @@
 </head>
 <body>
 
+<div class="top">
     <nav class="navbar navbar-default navbar-fixed-top">
+
         <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1">
                     <span class="glyphicon glyphicon-menu-hamburger"></span>
                 </button>
-                <a class="navbar-brand" href="#">Brand</a>
+                <a id="mainLogo" class="navbar-brand" href="#">CA<i class="fa fa-usd transform-right" aria-hidden="true"></i>H G<span><i class="fa fa-shield transform-left" aria-hidden="true"></i></span>ARDIAN</a>
             </div>
             <div class="collapse navbar-collapse" id="navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
@@ -36,39 +38,79 @@
                 </ul>
             </div>
         </div>
-        <a data-scroll href="#top" id="slideTopBtn">
-            Do góry
+        <a id="slideTopBtn">
             <span class="glyphicon glyphicon-arrow-up"></span>
         </a>
+
     </nav>
+</div>
 
-    <div class="long"></div>
+<div id="newsletterModal" class="modal fade" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title">NEWSLETTER</h4>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <label>E-mail</label>
+                    <input type="textarea" placeholder="Wpisz swojego e-maila">
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Cofnij</button>
+                <button type="button" class="btn btn-primary">Wyślij</button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
 
 
-    <section class="newsletter">
+<section class="newsletter container-fluid">
+    <div class="container">
+        <div>
+            <p>Chcesz znać nowości dotyczące</p>
+            <h2>
+                Cash Guardiana
+                <i class="fa fa-question-circle" aria-hidden="true"></i>
+            </h2>
+            <button class="btn" data-toggle="modal" data-target="#newsletterModal">Zapisz się!</button>
+        </div>
+    </div>
+</section>
 
-        <h2>Nie zwlekaj! Zapisz się na newsletter<span> już dziś!</span></h2>
-        <input id="showNewsletter" class="newsletter-btn-success" type="submit" value="Przejdź">
 
-        <section id="sectionNewsletter" class="newsletter-pop-up">
 
-            <h3>Zapisz się na newsletter</h3>
-            <i id="hideNewsletter" class="fa fa-times" aria-hidden="true"></i>
-            <form action="https://formspree.io/pands.siwek@gmail.com"
-                  method="POST">
-                <label>Email Adress</label><input name="email" type="email">
-                <label>Imię</label><input type="textarea" name="name">
-                <input class="newsletter-btn-success" type="submit" value="Wyślij">
-            </form>
 
-        </section>
 
-    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="js/bootstrap.min.js"></script>
-<script src="js/slide-options.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>

@@ -1,38 +1,36 @@
+@import url('https://fonts.googleapis.com/css?family=Anton|Lobster|Merriweather|Oxygen&subset=latin-ext');
+
+body {
+    font-size: 1.5em;
+}
+
 .show {
     display: block !important;
 }
 
+.hide {
+    display: none !important;
+}
+
 .big {
-    max-height: 60px !important;
-    line-height: 60px !important;
+    height: 3em !important;
+    padding-top: 1em !important;
+    background-color: #e5e5e5 !important;
 }
 
-a {
-    text-decoration: none;
+/* ----- section navigation ----- */
+.nav-small {
+    padding-top: .5em;
+    background-color: #14213d;;
 }
 
-/*------ section nav ------*/
-div.long {
-    height: 300vh;
-    background-color: black;
-}
-
-.navbar {
-    background-color: #14213d;
-}
-
-.navbar-default {
-    border-color: #0D1629;
-}
-
-.navbar-default .navbar-nav > li > a {
-    color: #fca311;
-    transition: .4s;
-}
-
-.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
-    color: #fafc1d;
-    transform: scale(1.2);
+nav.navbar-default {
+    background-color: rgba(177, 179, 174, 0.2);
+    border-color: transparent;
+    font-family: 'Merriweather', serif;
+    padding-top: 2em;
+    transition: .8s;
+    height: 5em;
 }
 
 nav.navbar > a {
@@ -40,7 +38,7 @@ nav.navbar > a {
     bottom: 5%;
     right: 3%;
     background-color: #14213d;
-    padding: 20px 15px;
+    padding: 5px 10px;
     animation: changeColors .7s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
@@ -49,31 +47,189 @@ nav.navbar > a {
     border-radius: 5px;
     color: #fca311;
     font-weight: bold;
+    cursor: pointer;
+    -webkit-transition: .4s;
+    -moz-transition:  .4s;
+    -ms-transition:  .4s;
+    -o-transition:  .4s;
+    transition:  .4s;
+    line-height: 25px !important;
+    border: .4px solid #fca311;
 }
+
+nav.navbar > a:hover{
+    transform: scale(1.2);
+}
+
 
 /*animation*/
 @keyframes changeColors {
-    0% { color: #ff0; }
-    100% { color: #fca311; }
+    0% {
+        color: #ff0;
+        border-color: #ff0;
+    }
+    100% {
+        color: #fca311;
+        border-color: #fca311;
+    }
 }
 
-/*------ end of section nav ------*/
-/*------ section newsletter ------*/
+nav.navbar-default i {
+    font-size: 1em;
+    animation: rotateY 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
 
+.navbar-default .navbar-nav > li > a {
+    color: #fca311;
+    text-shadow: 1px 1px #000;
+    padding: 0 15px;
+    transition: .4s;
+}
+
+.navbar-default .navbar-nav > li > a:focus,
+.navbar-default .navbar-nav > li > a:hover {
+    color: #e6cf2d;
+    transform: scale(1.2);
+}
+
+nav.navbar-default  div.navbar-header a {
+    color: #14213d;
+    text-shadow: .2px .2px #ff951e;
+    padding: 0;
+}
+
+nav.navbar-default  div.navbar-header a i {
+    color: #14213d;
+    text-shadow: none;
+}
+
+.long {
+    height: 300vh;
+}
+
+/*animate*/
+@keyframes rotateY {
+    0% {
+        transform: rotateY(0) scale(1);
+
+    }
+    50% {
+        text-shadow: .5px .5px #000;
+    }
+
+    100% {
+        transform: rotateY(360deg) scale(1.2);
+        color: #fca311;
+        text-shadow: 1px 1px #000;
+
+    }
+}
+
+/* ----- end of section navigation ----- */
+
+/* ----- section newsletter ----- */
 section.newsletter {
     background-color: #14213d;
-    height: 20vh;
-    width: 100%;
+    position: relative;
+    min-height: 11em;
+}
+
+section.newsletter div div {
+    margin: 0 auto;
+    padding-left: 15em;
+}
+
+section.newsletter p ,
+section.newsletter h2 {
+    text-shadow: 1px 1px #000;
+    text-transform: uppercase;
+    font-weight: bold;
+    z-index: 20;
+}
+
+
+section.newsletter p {
+    color: #fca311;
+    font-size: .85em;
+    padding: 1.5em 0 0 3em;
+    margin: 0;
+
 }
 
 section.newsletter h2 {
-    padding-top: 3%;
-}
-
-
-section.newsletter h2 span {
     color: #e5e5e5;
-    text-transform: uppercase;
+    font-size: 2em;
+    padding-left: 4em;
+    margin: 0;
+
 }
 
-/*------ end of section newsletter ------*/
+section.newsletter i {
+    position: absolute;
+    top: 50%;
+    left: 57%;
+    transform: translate(-50%, -50%);
+    font-size: 4em;
+    color: #fca311;
+    text-shadow: 2px 2px #000;
+}
+
+section.newsletter button {
+    color: #fca311;
+    background-color: transparent;
+    border-radius: 5px;
+    border-color: #fca311;
+    position: absolute;
+    top: 60%;
+    left: 45%;
+    transition: .5s;
+    font-weight: bold;
+}
+div.modal div.modal-footer button,
+section.newsletter button:hover,
+section.newsletter button:active {
+    color: #14213d;
+    background-color: #fca311;
+    border-color: #fca311;
+}
+
+/*modal*/
+.modal div.modal-content {
+    background-color: #14213d;
+    color: #fca311;
+    text-align: center;
+    font-weight: bold;
+}
+
+.modal .modal-header {
+    width: 50%;
+    margin: 0 auto;
+}
+
+div.modal div.modal-body {
+    padding-top: 10%;
+}
+
+div.modal div.modal-footer {
+    border-top: none;
+}
+
+div.modal div.modal-footer button {
+    color: #fca311;
+    background-color: transparent;
+    border-radius: 5px;
+    border-color: #fca311;
+    transition: .5s;
+    font-weight: bold;
+}
+
+
+.modal input {
+    color: #000;
+    padding: 5px;
+}
+
+
+/* ----- end of section newsletter ----- */
