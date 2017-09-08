@@ -14,7 +14,7 @@ body {
 
 .big {
     height: 3em !important;
-    padding-top: 1em !important;
+
     background-color: #e5e5e5 !important;
 }
 
@@ -30,7 +30,7 @@ nav.navbar-default {
     font-family: 'Merriweather', serif;
     padding-top: 2em;
     transition: .8s;
-    height: 5em;
+    min-height: 5em;
 }
 
 nav.navbar > a {
@@ -127,6 +127,66 @@ nav.navbar-default  div.navbar-header a i {
     }
 }
 
+@media screen and (max-width: 767px) {
+    nav.navbar a {
+        text-align: center;
+    }
+
+    nav.navbar a:hover {
+        transform: none !important;
+    }
+
+    nav div div.navbar-collapse {
+        background-color: #e5e5e5;
+    }
+
+    .big {
+        max-height: 15em !important;
+        padding-top: 1em !important;
+        background-color: #e5e5e5 !important;
+    }
+
+    /*section newsletter*/
+    section.newsletter div div {
+        padding-left: .5em !important;
+    }
+
+    section.newsletter div div p,
+    section.newsletter div div h2 {
+        padding-left: 0;
+    }
+
+    section.newsletter div div i {
+        display: none;
+    }
+
+    section.newsletter div div button {
+        top: 70%;
+        left: 35%;
+    }
+    /*end of section newsletter*/
+
+}
+
+@media screen and (min-width: 740px) and (max-width: 1370px) {
+    section.newsletter div div p {
+        padding-left: .7em;
+    }
+    section.newsletter div div h2 {
+        padding-left: 1.2em;
+    }
+
+    section.newsletter div div i {
+        left: 80%;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .container {
+        width: 100%;
+    }
+}
+
 /* ----- end of section navigation ----- */
 
 /* ----- section newsletter ----- */
@@ -166,7 +226,7 @@ section.newsletter h2 {
 
 }
 
-section.newsletter i {
+section.newsletter i.fa-question-circle {
     position: absolute;
     top: 50%;
     left: 57%;
