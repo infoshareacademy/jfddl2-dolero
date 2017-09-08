@@ -1,6 +1,4 @@
-body {
-
-}
+@import url('https://fonts.googleapis.com/css?family=Lato');
 
 .container-jm {
     display: flex;
@@ -240,7 +238,7 @@ div.addinfo .overlay {
     left: 50%;
     transform: translate(-50%, -50%);
     overflow: hidden;
-    font-size: 1.5em;
+    font-size: 1.35em;
     text-shadow: 3px 2px black;
 }
 
@@ -263,6 +261,9 @@ div.addinfo .overlay {
     background-size: cover;
 
     /*background-color: white;*/
+}
+div.text .icon {
+    display: none;
 }
 
 @media screen and (max-width: 780px) {
@@ -386,6 +387,9 @@ div.addinfo .overlay {
 
     .greyback {
         border-radius: 10%;
+    }
+    div.text .icon {
+        display: inline;
     }
 
 }
