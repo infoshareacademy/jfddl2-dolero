@@ -234,6 +234,7 @@ div.modal div.modal-footer button {
 
 /* ----- end of section newsletter ----- */
 
+@import url('https://fonts.googleapis.com/css?family=Lato');
 
 .container-jm {
     display: flex;
@@ -360,7 +361,22 @@ div.box p {
     border-radius: 40px 0 0 40px;
 }
 
-/
+/*.projectinfo {*/
+
+/*font-size: 1.5rem;*/
+/*max-width: 1200px;*/
+/*margin: 0 auto;*/
+/*}*/
+
+/*.bg_pinfo {*/
+/*width: 100%;*/
+/*background-color: #e5e5e5;*/
+/*}*/
+
+/*.projectinfo h2 {*/
+/*width: 100%;*/
+/*text-align: center;*/
+/*}*/
 .height {
     min-height: 20vh;
     width: 100%;
