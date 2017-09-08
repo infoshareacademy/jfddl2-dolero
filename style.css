@@ -1,0 +1,142 @@
+body, html {
+    height: 100%;
+}
+
+.hero-image {
+    position: relative;
+    max-width: 100%;
+    min-width: 100%;
+    border-radius: 0px;
+    height: auto;
+    margin-top: -50px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.hero-image1 {
+
+    background-image: url("img/2017-31-08-18-02-49.jpeg");
+}
+
+.hero-image2 {
+
+    background-image: url("img/ways-to-make-your-business-stand-out.jpg");
+    opacity: 0.8;
+}
+.hero-image3 {
+    background-image: url("img/maxresdefault.jpg");
+
+}
+
+.hero-text {
+    text-align: center;
+    color: white;
+}
+
+
+
+h1 {
+    position: absolute;
+    font-family: "Montserrat";
+    font-size: 13vw;
+    margin-top: 5%;
+    padding-left: 13%;
+    text-align: center;
+    color: white;
+    z-index: 5;
+    text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0,0,0,.1), 0 0 5px rgba(0,0,0,.1), 0 1px 3px rgba(0,0,0,.3), 0 3px 5px rgba(0,0,0,.2), 0 5px 10px rgba(0,0,0,.25), 0 10px 10px rgba(0,0,0,.2), 0 20px 20px rgba(0,0,0,.15);
+}
+
+span {
+
+}
+
+
+ul.lista1 {
+    padding-top: 20%;
+}
+ul.lista2{
+    padding-top: 20%;
+
+}
+ul.lista3{
+    padding-top: 20%;
+
+}
+li {
+
+    padding-top: 70px;
+    font-family: "Montserrat";
+    font-size: 4vw;
+    letter-spacing: -2px;
+    text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0,0,0,.1), 0 0 5px rgba(0,0,0,.1), 0 1px 3px rgba(0,0,0,.3), 0 3px 5px rgba(0,0,0,.2), 0 5px 10px rgba(0,0,0,.25), 0 10px 10px rgba(0,0,0,.2), 0 20px 20px rgba(0,0,0,.15);
+
+}
+#slideshow {
+    margin: 50px auto;
+    position: relative;
+
+    height: 90%;
+    padding: 0px;
+
+}
+#slideshow > div {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+}
+
+/*fadein tabele li do obrazków*/
+
+/*#slideshow li:first-child{*/
+/*opacity: 0;*/
+/*transition: 1s ease-in-out;*/
+/*}*/
+
+/*#slideshow li:nth-child(1) {*/
+/*opacity: 0;*/
+/*transition-delay: 3000;*/
+/*transition: 1s ease-in-out;*/
+/*}*/
+/*#slideshow li:nth-child(2) {*/
+/*opacity: 0;*/
+/*transition: 1s ease-in-out;*/
+/*}*/
+
+.transparent {
+    opacity: 1 !important;
+}
+/*znak $ w aureoli*/
+/*#sign {*/
+/*margin: 0 auto;*/
+/*text-align: center;*/
+/*color: #fca311;*/
+/*text-shadow: 0 0 10px #14213d, 0 0 15px #14213d, 0 0 30px #14213d,*/
+/*0 0 30px #14213d, 0 0 30px #14213d, 0 0 40px #14213d, 0 0 50px #14213d,*/
+/*0 0 60px #14213d, 0 0 70px #14213d, 0 0 80px #14213d, 0 0 90px #14213d,*/
+/*0 0 100px #14213d;*/
+/*}*/
+
+/*znak $ pulsujący*/
+#sign {
+    color: #fca311;
+    text-shadow: 0 0 3vw #14213d;
+    animation: neon 1.5s ease infinite;
+
+    -webkit-animation: neon 1.5s ease infinite;
+}
+@keyframes neon {
+    0%,
+    100% {
+        text-shadow: 0 0 1vw #14213d, 0 0 3vw #14213d, 0 0 10vw #0d253d, 0 0 10vw #0f223d, 0 0 .4vw #0F223D, .5vw .5vw .1vw #0D253D;
+        color: #FED128;
+    }
+
+    50% {
+        text-shadow: 0 0 .5vw #071F3D, 0 0 1.5vw #071F3D, 0 0 5vw #071F3D, 0 0 5vw #071F3D, 0 0 .2vw #071F3D, .5vw .5vw .1vw #04273D;
+        color: #806914;
+    }
+
+}
