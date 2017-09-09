@@ -470,6 +470,7 @@ div.overlay .text {
     overflow: hidden;
     font-size: 1.35em;
     text-shadow: 3px 2px black;
+    background-color: transparent;
 }
 
 /*additional info background on panels*/
