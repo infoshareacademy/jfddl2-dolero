@@ -33,6 +33,17 @@
 
 }
 
+.panel1 {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    opacity: 0.7;
+    margin-bottom: 10px;
+    position: absolute;
+    right: 100%;
+
+}
+
 .panel:hover {
     opacity: 1;
 }
@@ -165,8 +176,6 @@ div.addinfo .col-sm-3 {
 
 }
 
-
-
 .greyback {
     background-color: #e5e5e5;
     width: 100%;
@@ -178,6 +187,7 @@ div.addinfo .col-sm-3 {
     background-size: cover;
 
 }
+
 /*animation on panels*/
 
 .bg-prof:hover .overlay {
@@ -238,14 +248,11 @@ div.overlay .text {
     background-image: url("../images/javascript.png");
     background-size: cover;
 
-
-
 }
 
 .bg-boot {
     background-image: url("../images/bootstrap.png");
     background-size: cover;
-
 
 }
 
@@ -370,7 +377,7 @@ div.overlay .text {
 
     div.box p {
         padding-right: 0;
-        font-size:1em;
+        font-size: 1em;
     }
 
     .greyback {
@@ -380,13 +387,16 @@ div.overlay .text {
     div.text .icon {
         display: inline;
     }
-.box {
-    height: 30vw;
-}
+
+    .box {
+        height: 30vw;
+    }
+
     div.col-sm-12 h2 {
         font-size: 1.5em;
         text-align: center;
         font-weight: bold;
+
     }
 
 }
