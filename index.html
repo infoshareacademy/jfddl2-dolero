@@ -24,9 +24,9 @@
 <!--Start features list section-->
 <section class="container-jm">
 
-    <div class="section-title "> <h2>Podstawowe funkcjonalności</h2></div>
+    <div class="section-title "><h2>Podstawowe funkcjonalności</h2></div>
 
-    <div class="panel">
+    <div class="panel goleft" id="look1">
         <div class="bg1">
 
         </div>
@@ -39,7 +39,7 @@
         </div>
 
     </div>
-    <div class="panel ">
+    <div class="panel goright" id="look2">
         <div class="box dback">
             <h2> Oszczędzanie</h2>
             <div class="table">
@@ -52,7 +52,7 @@
         </div>
 
     </div>
-    <div class="panel">
+    <div class="panel goleft" id="look3">
         <div class="bg3">
 
         </div>
@@ -66,7 +66,7 @@
         </div>
 
     </div>
-    <div class="panel ">
+    <div class="panel goright" id="look4">
         <div class="box dback">
             <h2> Raporty </h2>
             <div class="table">
@@ -78,7 +78,7 @@
         </div>
 
     </div>
-    <div class="panel">
+    <div class="panel goleft" id="look5">
         <div class="bg5">
         </div>
         <div class="box lback">
@@ -91,7 +91,7 @@
         </div>
 
     </div>
-    <div class="panel ">
+    <div class="panel goright" id="look6">
         <div class="box dback">
             <h2>Powiązanie kont</h2>
             <div class="table">
@@ -108,43 +108,45 @@
 </section>
 <!--end of features list section-->
 
+
 <!--start additional info section -->
 <section>
 
-<div class="greyback addinfo">
-    <div class="container ">
-        <div class="row height">
-            <div class="col-sm-12 "><h2>Więcej informacji o projekcie</h2></div>
-        </div>
-        <div class="row position">
-            <!--Start additional info-->
-            <div class="col-sm-3 bg-boot ">
-                <div class="overlay">
-                    <div class="text">Strona korzysta z dobrodziejstw Bootstrap</div>
-                </div>
+    <div class="greyback addinfo">
+        <div class="container ">
+            <div class="row height">
+                <div class="col-sm-12 "><h2>Więcej informacji o projekcie</h2></div>
             </div>
-            <div class="col-sm-3 bg-prof ">
-                <div class="overlay">
-                    <div class="text">Landing Page stworzony przez profesjonalistów</div>
+            <div class="row position">
+                <!--Start additional info-->
+                <div class="col-sm-3 bg-boot ">
+                    <div class="overlay">
+                        <div class="text">Strona korzysta z dobrodziejstw Bootstrap</div>
+                    </div>
                 </div>
-            </div>
+                <div class="col-sm-3 bg-prof ">
+                    <div class="overlay">
+                        <div class="text">Landing Page stworzony przez profesjonalistów</div>
+                    </div>
+                </div>
 
-            <div class="col-sm-3 bg-js">
-                <div class="overlay">
-                    <div class="text">Jeden szaleniec użył tu nawet javascript</div>
+                <div class="col-sm-3 bg-js">
+                    <div class="overlay">
+                        <div class="text">Jeden szaleniec użył tu nawet javascript</div>
+                    </div>
                 </div>
-            </div>
-            <div class="col-sm-3 bg-rwd">
-                <div class="overlay">
-                    <div class="text"> Projekt jest w pełni responsywny</div>
+                <div class="col-sm-3 bg-rwd">
+                    <div class="overlay">
+                        <div class="text"> Projekt jest w pełni responsywny</div>
+                    </div>
                 </div>
-            </div>
 
 
+            </div>
         </div>
     </div>
-</div>
 </section>
+
 
 <!--end of additional info section -->
 
@@ -155,6 +157,26 @@
 <script src="js/jquery-3.2.1.js"></script>
 
 <script>
+//Enter od panels animation
+
+    document.addEventListener("scroll", animate);
+
+    function modifyText() {
+        document.getElementById("look1").setAttribute("style", "transform: translateX(0)");
+        document.getElementById("look2").setAttribute("style", "transform: translateX(0)");
+        document.getElementById("look3").setAttribute("style", "transform: translateX(0)");
+        document.getElementById("look4").setAttribute("style", "transform: translateX(0)");
+        document.getElementById("look5").setAttribute("style", "transform: translateX(0)");
+        document.getElementById("look6").setAttribute("style", "transform: translateX(0)");
+
+    }
+
+    function animate() {
+        var kon = window.pageYOffset;
+        if (kon > 200) {
+            modifyText();
+        }
+    }
 
 
 
