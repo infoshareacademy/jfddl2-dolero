@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Lato');
+/*Start features list section*/
 
 .container-jm {
     display: flex;
@@ -7,7 +7,21 @@
     min-width: 320px;
     margin: auto;
     padding: 0;
+    position: relative;
 
+}
+
+.section-title h2 {
+    font-size: 3.5em;
+
+    text-align: center;
+
+    font-weight: bold;
+}
+
+.section-title {
+    min-height: 15vh;
+    width: 100%;
 }
 
 .panel {
@@ -22,6 +36,56 @@
 .panel:hover {
     opacity: 1;
 }
+
+.box {
+    width: 50%;
+    height: 100%;
+    flex-basis: 100%;
+    border-radius: 10%;
+    display: inline-block;
+    text-align: center;
+    opacity: 1;
+
+}
+
+div.box .table {
+    max-height: 80%;
+    display: table;
+}
+
+div.table p {
+    display: table-cell;
+    vertical-align: top;
+    padding: 0 30px;
+    text-align: left;
+
+}
+
+div.box h2 {
+    font-size: 2.5em;
+
+}
+
+div.box p {
+    font-size: 1.5em;
+    margin: auto;
+    padding-right: 10%;
+    padding-top: 5vh;
+    color: #14213d;
+
+}
+
+.lback {
+    background-color: #e5e5e5;
+    border-radius: 0 40px 40px 0;
+}
+
+.dback {
+    background-color: #fca311;
+    border-radius: 40px 0 0 40px;
+}
+
+/*panels background*/
 
 .bg1 {
     background-image: url('../images/notification.jpg');
@@ -77,71 +141,9 @@
     background-position: center;
 }
 
-.box {
-    width: 50%;
-    height: 100%;
-    flex-basis: 100%;
-    border-radius: 10%;
-    display: inline-block;
-    text-align: center;
-    opacity: 1;
+/*Start additonal info section */
 
-}
-
-dib.box .table {
-    max-height: 80%;
-    display: table;
-}
-
-div.table p {
-    display: table-cell;
-    vertical-align: top;
-    padding: 0 30px;
-    text-align: left;
-
-}
-
-div.box h2 {
-    font-size: 2.5em;
-
-}
-
-div.box p {
-    font-size: 1.5em;
-    margin: auto;
-    padding-right: 10%;
-    padding-top: 5vh;
-    color: #14213d;
-
-}
-
-.lback {
-    background-color: #e5e5e5;
-    border-radius: 0 40px 40px 0;
-}
-
-.dback {
-    background-color: #fca311;
-    border-radius: 40px 0 0 40px;
-}
-
-/*.projectinfo {*/
-
-/*font-size: 1.5rem;*/
-/*max-width: 1200px;*/
-/*margin: 0 auto;*/
-/*}*/
-
-/*.bg_pinfo {*/
-/*width: 100%;*/
-/*background-color: #e5e5e5;*/
-/*}*/
-
-/*.projectinfo h2 {*/
-/*width: 100%;*/
-/*text-align: center;*/
-/*}*/
-.height {
+div.container.height {
     min-height: 20vh;
     width: 100%;
 
@@ -150,23 +152,7 @@ div.box p {
 div.col-sm-12 h2 {
     font-size: 3.5em;
     text-align: center;
-    /*position:absolute;*/
-    /*left:50%;*/
-    /*transform: translateX(-50%);*/
     font-weight: bold;
-}
-
-.section-title h2 {
-    font-size: 3.5em;
-
-    text-align: center;
-
-    font-weight: bold;
-}
-
-.section-title {
-    min-height: 15vh;
-    width: 100%;
 }
 
 div.addinfo .col-sm-6 {
@@ -179,10 +165,7 @@ div.addinfo .col-sm-3 {
 
 }
 
-.addtitle {
-    font-size: 2em;
-    min-height: 20vh;
-}
+
 
 .greyback {
     background-color: #e5e5e5;
@@ -195,6 +178,7 @@ div.addinfo .col-sm-3 {
     background-size: cover;
 
 }
+/*animation on panels*/
 
 .bg-prof:hover .overlay {
     height: 100%;
@@ -231,7 +215,7 @@ div.addinfo .overlay {
 
 }
 
-.text {
+div.overlay .text {
     color: white;
     position: absolute;
     top: 50%;
@@ -241,6 +225,8 @@ div.addinfo .overlay {
     font-size: 1.35em;
     text-shadow: 3px 2px black;
 }
+
+/*additional info background on panels*/
 
 .bg-rwd {
     background-image: url("../images/RWD.jpg");
@@ -252,7 +238,7 @@ div.addinfo .overlay {
     background-image: url("../images/javascript.png");
     background-size: cover;
 
-    /*background-color: white;*/
+
 
 }
 
@@ -260,11 +246,10 @@ div.addinfo .overlay {
     background-image: url("../images/bootstrap.png");
     background-size: cover;
 
-    /*background-color: white;*/
+
 }
-div.text .icon {
-    display: none;
-}
+
+/*phone mode on*/
 
 @media screen and (max-width: 780px) {
     .bg1 {
@@ -373,23 +358,35 @@ div.text .icon {
         text-shadow: none;
         width: 100%;
         text-align: center;
+        font-size: 1em;
 
     }
 
     .panel {
         margin-right: 10px;
         margin-left: 10px;
+        height: 30vw;
     }
 
     div.box p {
         padding-right: 0;
+        font-size:1em;
     }
 
     .greyback {
         border-radius: 10%;
     }
+
     div.text .icon {
         display: inline;
+    }
+.box {
+    height: 30vw;
+}
+    div.col-sm-12 h2 {
+        font-size: 1.5em;
+        text-align: center;
+        font-weight: bold;
     }
 
 }
