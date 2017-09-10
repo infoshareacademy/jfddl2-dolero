@@ -9,16 +9,17 @@
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+
+
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+
     <![endif]-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-
+    <link href="https://fonts.googleapis.com/css?family=Lato">
 </head>
 <body data-spy="scroll" data-target="spyNav">
 <!--kod Piotrek - NAV -->
@@ -39,6 +40,22 @@
                     <li><a id="team" href="#teamDestination">Zespół</a></li>
                     <li><a id="newsletter" href="#newsletterDestination">Newsletter</a></li>
                 </ul>
+
+<body>
+<!--Start features list section-->
+<section class="container-jm" id="infoDestination">
+
+    <div class="section-title "><h2>Podstawowe funkcjonalności</h2></div>
+
+    <div class="panel goleft" id="look1">
+        <div class="bg1">
+
+        </div>
+        <div class="box lback">
+            <h2> System powiadomień </h2>
+            <div class="table">
+                <p> Po zalogowaniu się do panelu otrzymasz powiadomienie o bieżącym stanie środków oraz o nadchodzących
+                    płatnościach</p>
             </div>
         </div>
         <a id="slideTopBtn">
@@ -71,16 +88,84 @@
                     <span class="glyphicon glyphicon-envelope"></span>
                 </button>
             </form>
+<!--start additional info section -->
+<section id="additionalInfoDestination">
+
+    <div class="greyback addinfo">
+        <div class="container ">
+            <div class="row height">
+                <div class="col-sm-12 "><h2>Więcej informacji o projekcie</h2></div>
+            </div>
+            <div class="row position">
+                <!--Start additional info-->
+                <div class="col-sm-3 bg-boot ">
+                    <div class="overlay">
+                        <div class="text">Strona korzysta z dobrodziejstw Bootstrap</div>
+                    </div>
+                </div>
+                <div class="col-sm-3 bg-prof ">
+                    <div class="overlay">
+                        <div class="text">Landing Page stworzony przez profesjonalistów</div>
+                    </div>
+                </div>
+
+                <div class="col-sm-3 bg-js">
+                    <div class="overlay">
+                        <div class="text">Jeden szaleniec użył tu nawet javascript</div>
+                    </div>
+                </div>
+                <div class="col-sm-3 bg-rwd">
+                    <div class="overlay">
+                        <div class="text"> Projekt jest w pełni responsywny</div>
+                    </div>
+                </div>
+
+
+            </div>
         </div>
     </div>
 </section>
 <!--koniec kodu Piotrka - NEWSLETTER -->
 
 
+<!--end of additional info section -->
+
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="js/bootstrap.min.js"></script>
+<script src="js/jquery-3.2.1.js"></script>
+
+<script>
+//Enter od panels animation
+
+    document.addEventListener("scroll", animate);
+
+    function modifyText() {
+        for(var i=1; i<7; i++) {
+            document.getElementById("look" + i).setAttribute("style", "transform: translateX(0)");
+
+        }
+//        document.getElementById("look1").setAttribute("style", "transform: translateX(0)");
+//        document.getElementById("look2").setAttribute("style", "transform: translateX(0)");
+//        document.getElementById("look3").setAttribute("style", "transform: translateX(0)");
+//        document.getElementById("look4").setAttribute("style", "transform: translateX(0)");
+//        document.getElementById("look5").setAttribute("style", "transform: translateX(0)");
+//        document.getElementById("look6").setAttribute("style", "transform: translateX(0)");
+
+    }
+
+    function animate() {
+        var kon = window.pageYOffset;
+        if (kon > 200) {
+            modifyText();
+        }
+    }
+
+
+
+
+</script>
 <script src="js/main.js"></script>
 </body>
 </html>
