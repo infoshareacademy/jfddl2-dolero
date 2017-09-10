@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="pl">
 <head>
-    <meta charset="UTF-8">
-    <link href="css/bootstrap.css" rel="stylesheet">
-    <link href="css/style.css" type="text/css" rel="stylesheet">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>Dolero</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Bootstrap -->
-
-
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -15,27 +18,26 @@
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-</head>
-<body>
 
-<div class="top">
+</head>
+<body data-spy="scroll" data-target="spyNav">
+<!--kod Piotrek - NAV -->
+<section id="spyNav" class="navigation">
     <nav class="navbar navbar-default navbar-fixed-top">
 
         <div class="container">
             <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-                        data-target="#navbar-collapse-1">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1">
                     <span class="glyphicon glyphicon-menu-hamburger"></span>
                 </button>
-                <a id="mainLogo" class="navbar-brand" href="#">CA<i class="fa fa-usd transform-right"
-                                                                    aria-hidden="true"></i>H G<span><i
-                        class="fa fa-shield transform-left" aria-hidden="true"></i></span>ARDIAN</a>
+                <a id="mainLogo" class="navbar-brand" href="#">money<i class="fa fa-usd transform-right" aria-hidden="true"></i>ave</a>
             </div>
             <div class="collapse navbar-collapse" id="navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#">Informacje o produkcje</a></li>
-                    <li><a href="#">Dodatkowe informacje</a></li>
-                    <li><a href="#">Zespół</a></li>
+                    <li><a id="info" href="#infoDestination">Informacje o produkcje</a></li>
+                    <li><a id="additionalInfo" href="#additionalInfoDestination">Dodatkowe informacje</a></li>
+                    <li><a id="team" href="#teamDestination">Zespół</a></li>
+                    <li><a id="newsletter" href="#newsletterDestination">Newsletter</a></li>
                 </ul>
             </div>
         </div>
@@ -44,259 +46,41 @@
         </a>
 
     </nav>
-</div>
-
-
-<!--Start features list section-->
-<section class="container-jm">
-
-    <!--<div class="section-title "><h2>Podstawowe funkcjonalności</h2></div>-->
-
-    <div class="panel goleft" id="look1">
-        <div class="bg1">
-
-        </div>
-        <div class="box lback">
-            <h2> System powiadomień </h2>
-            <div class="table">
-                <p> Po zalogowaniu się do panelu otrzymasz powiadomienie o bieżącym stanie środków oraz o nadchodzących
-                    płatnościach</p>
-            </div>
-        </div>
-
-    </div>
-    <div class="panel goright" id="look2">
-        <div class="box dback">
-            <h2> Oszczędzanie</h2>
-            <div class="table">
-                <p>Na podstawie wprowadzonych danych, nasz system na bieżaco będzie pokazywał ile czasu zostało Ci do
-                    oszczędzenia na wymarzony samochód, planowane wakacje czy cokowielwiek tylko potrzebujesz</p>
-            </div>
-        </div>
-        <div class="bg2">
-
-        </div>
-
-    </div>
-    <div class="panel goleft" id="look3">
-        <div class="bg3">
-
-        </div>
-        <div class="box lback">
-            <h2> Kalkulator walut</h2>
-            <div class="table">
-                <p> Dzięki nieograniczonym możliwościom podróżowania oraz pracy zdalnej możemy zarabiać oraz wydawać w
-                    niemal każdej walucie świata. Wbudowany kalkulator walut pomoże w szybkim przeliczeniu kursu
-                    pomiędzy
-                    ponad 100 walutami świata</p>
-            </div>
-        </div>
-
-    </div>
-    <div class="panel goright" id="look4">
-        <div class="box dback">
-            <h2> Raporty </h2>
-            <div class="table">
-                <p> Na podstawie wprowadzonych danych będziesz mógł regularnie drukować raporty na temat stanu swoich
-                    fiansów wraz z wykresami</p>
-            </div>
-        </div>
-        <div class="bg4">
-        </div>
-
-    </div>
-    <div class="panel goleft" id="look5">
-        <div class="bg5">
-        </div>
-        <div class="box lback">
-            <h2> Ostrzeżenia</h2>
-            <div class="table">
-                <p> Gdy stan Twojego konta niebezpiecznie zbliży się do ustalonej granicy, system wygeneruje odpowiedno
-                    wcześniej ostrzeżenie. Poinformuje Cię również, gdy stan oszczędności będzie zbliżał się do
-                    założonego celu</p>
-            </div>
-        </div>
-
-    </div>
-    <div class="panel goright" id="look6">
-        <div class="box dback">
-            <h2>Powiązanie kont</h2>
-            <div class="table">
-                <p> Jeżeli dzielisz finanse z kimś bliskim, system pozwoli na skonfigurowane połączenie dwóch kont i
-                    wspólne korzystanie z aplikacji</p>
-            </div>
-        </div>
-        <div class="bg6">
-        </div>
-
-    </div>
-
-
 </section>
-<!--end of features list section-->
+<!--koniec kodu Piotrka - NAV -->
 
+<!--kod Piotrka - NEWSLETTER -->
 
-<!--start additional info section -->
-<section>
-
-    <div class="greyback addinfo">
-        <div class="container ">
-            <div class="row height">
-                <!--<div class="col-sm-12 "><h2>Więcej informacji o projekcie</h2></div>-->
-            </div>
-            <div class="row position">
-                <!--Start additional info-->
-                <div class="col-sm-3 bg-boot ">
-                    <div class="overlay">
-                        <div class="text">Strona korzysta z dobrodziejstw Bootstrap</div>
-                    </div>
+<section id="newsletterDestination" class="newsletter container-fluid">
+    <div class="container">
+        <div class="col-md-offset-4">
+            <h3 class="text-center">MONEY $AVE</h3>
+            <h4 class="text-center">Zapisz się na darmowego newslettera</h4>
+            <form class="row" action="https://formspree.io/piotr.siwek.90@gmail.com"
+                  method="POST">
+                <div class="newsletter-form-name col-xs-12 col-md-6">
+                    <label class="text-uppercase"><span class="glyphicon glyphicon-user"></span> Twoje imie</label>
+                    <input name="name" type="text">
+                 </div>
+                <div class="newsletter-form-email col-xs-12 col-md-6">
+                    <label class="text-uppercase"><span class="glyphicon glyphicon-envelope"></span> Email</label>
+                    <input name="email" type="email">
                 </div>
-                <div class="col-sm-3 bg-prof ">
-                    <div class="overlay">
-                        <div class="text">Landing Page stworzony przez profesjonalistów</div>
-                    </div>
-                </div>
-
-                <div class="col-sm-3 bg-js">
-                    <div class="overlay">
-                        <div class="text">Jeden szaleniec użył tu nawet javascript</div>
-                    </div>
-                </div>
-                <div class="col-sm-3 bg-rwd">
-                    <div class="overlay">
-                        <div class="text"> Projekt jest w pełni responsywny</div>
-                    </div>
-                </div>
-
-
-            </div>
+                <button class="col-xs-offset-3 col-sm-offset-2 col-md-offset-8">
+                    Wyślij
+                    <span class="glyphicon glyphicon-envelope"></span>
+                </button>
+            </form>
         </div>
     </div>
-    <div id="newsletterModal" class="modal fade" tabindex="-1" role="dialog">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
-                            aria-hidden="true">&times;</span></button>
-                    <h4 class="modal-title">NEWSLETTER</h4>
-                </div>
-                <div class="modal-body">
-                    <form>
-                        <label>E-mail</label>
-                        <input type="textarea" placeholder="Wpisz swojego e-maila">
-                    </form>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Cofnij</button>
-                    <button type="button" class="btn btn-primary">Wyślij</button>
-                </div>
-            </div><!-- /.modal-content -->
-        </div><!-- /.modal-dialog -->
-    </div><!-- /.modal -->
 </section>
+<!--koniec kodu Piotrka - NEWSLETTER -->
 
-    <section class="newsletter container-fluid">
-        <div class="container">
-            <div>
-                <p>Chcesz znać nowości dotyczące</p>
-                <h2>
-                    Cash Guardiana
-                    <i class="fa fa-question-circle" aria-hidden="true"></i>
-                </h2>
-                <button class="btn" data-toggle="modal" data-target="#newsletterModal">Zapisz się!</button>
-            </div>
-        </div>
-    </section>
-
-
-
-
-
-<div style="text-align: center">
-    <h1> ABOUT US</h1>
-</div>
-<div class="flex_container">
-    <div class="flex_item">
-        <div>
-            <img class="photo" src="images/pretty_face_by_red_head_madness-d72qhc9.jpg" alt="Andrzej"/>
-            <div class="photo-details">
-                <h2>Andrzej</h2>
-                <p>lorem ipsum</p>
-            </div>
-        </div>
-    </div>
-
-    <div class="flex_item">
-        <img class="photo" src="images/pretty_face_by_red_head_madness-d72qhc9.jpg" alt="Jarek"/>
-        <div class="photo-details">
-            <h2>Andrzej</h2>
-            <p>lorem ipsum</p>
-        </div>
-    </div>
-
-    <div class="flex_item">
-        <img class="photo" src="images/pretty_face_by_red_head_madness-d72qhc9.jpg" alt="Piotrek"/>
-        <div class="photo-details">
-            <h2>Andrzej</h2>
-            <p>lorem ipsum</p>
-        </div>
-    </div>
-
-    <div class="flex_item">
-        <img class="photo" src="images/pretty_face_by_red_head_madness-d72qhc9.jpg" alt="Monika"/>
-        <div class="photo-details">
-            <h2>Andrzej</h2>
-            <p>lorem ipsum</p>
-        </div>
-    </div>
-</div>
-
-
-<h2>Opacity with Box</h2>
-<p>Hover over the image to see the effect.</p>
-
-<div class="container">
-
-    <img src="images/pretty_face_by_red_head_madness-d72qhc9.jpg" alt="Avatar" class="image" style="width:100%">
-    <div class="middle">
-        <div class="text">John Doe</div>
-    </div>
-
-</div>
-
-
-<!--end of additional info section -->
 
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="js/bootstrap.min.js"></script>
-<script src="js/jquery-3.2.1.js"></script>
-
-<script>
-    //Enter od panels animation
-
-    document.addEventListener("scroll", animate);
-
-    function modifyText() {
-        document.getElementById("look1").setAttribute("style", "transform: translateX(0)");
-        document.getElementById("look2").setAttribute("style", "transform: translateX(0)");
-        document.getElementById("look3").setAttribute("style", "transform: translateX(0)");
-        document.getElementById("look4").setAttribute("style", "transform: translateX(0)");
-        document.getElementById("look5").setAttribute("style", "transform: translateX(0)");
-        document.getElementById("look6").setAttribute("style", "transform: translateX(0)");
-
-    }
-
-    function animate() {
-        var kon = window.pageYOffset;
-        if (kon > 200) {
-            modifyText();
-        }
-    }
-
-
-</script>
-
+<script src="js/main.js"></script>
 </body>
 </html>
