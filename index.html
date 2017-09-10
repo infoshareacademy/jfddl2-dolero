@@ -22,7 +22,7 @@
 
 <body>
 <!--Start features list section-->
-<section class="container-jm">
+<section class="container-jm" id="infoDestination">
 
     <div class="section-title "><h2>Podstawowe funkcjonalności</h2></div>
 
@@ -110,7 +110,7 @@
 
 
 <!--start additional info section -->
-<section>
+<section id="additionalInfoDestination">
 
     <div class="greyback addinfo">
         <div class="container ">
@@ -162,12 +162,16 @@
     document.addEventListener("scroll", animate);
 
     function modifyText() {
-        document.getElementById("look1").setAttribute("style", "transform: translateX(0)");
-        document.getElementById("look2").setAttribute("style", "transform: translateX(0)");
-        document.getElementById("look3").setAttribute("style", "transform: translateX(0)");
-        document.getElementById("look4").setAttribute("style", "transform: translateX(0)");
-        document.getElementById("look5").setAttribute("style", "transform: translateX(0)");
-        document.getElementById("look6").setAttribute("style", "transform: translateX(0)");
+        for(var i=1; i<7; i++) {
+            document.getElementById("look" + i).setAttribute("style", "transform: translateX(0)");
+
+        }
+//        document.getElementById("look1").setAttribute("style", "transform: translateX(0)");
+//        document.getElementById("look2").setAttribute("style", "transform: translateX(0)");
+//        document.getElementById("look3").setAttribute("style", "transform: translateX(0)");
+//        document.getElementById("look4").setAttribute("style", "transform: translateX(0)");
+//        document.getElementById("look5").setAttribute("style", "transform: translateX(0)");
+//        document.getElementById("look6").setAttribute("style", "transform: translateX(0)");
 
     }
 
@@ -177,6 +181,7 @@
             modifyText();
         }
     }
+
 
 
 
