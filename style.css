@@ -1,8 +1,13 @@
-body, html {
-    height: 100%;
+/*section.hero*/
+body, html, section.hero {
+    height:100%;
 }
 
-.hero-image {
+
+
+
+
+section.hero .hero-image {
     position: relative;
     max-width: 100%;
     min-width: 100%;
@@ -13,29 +18,31 @@ body, html {
     background-repeat: no-repeat;
     background-size: cover;
 }
-.hero-image1 {
+
+section.hero .hero-image1 {
 
     background-image: url("img/2017-31-08-18-02-49.jpeg");
 }
-
-.hero-image2 {
+/*section.hero*/
+section.hero .hero-image2 {
 
     background-image: url("img/ways-to-make-your-business-stand-out.jpg");
     opacity: 0.8;
 }
-.hero-image3 {
+/*section.hero*/
+section.hero .hero-image3 {
     background-image: url("img/maxresdefault.jpg");
 
 }
-
-.hero-text {
+/*section.hero*/
+section.hero .hero-text {
     text-align: center;
     color: white;
 }
 
 
-
-h1 {
+/*section.hero*/
+section.hero h1 {
     position: absolute;
     font-family: "Montserrat";
     font-size: 13vw;
@@ -46,24 +53,25 @@ h1 {
     z-index: 5;
     text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0,0,0,.1), 0 0 5px rgba(0,0,0,.1), 0 1px 3px rgba(0,0,0,.3), 0 3px 5px rgba(0,0,0,.2), 0 5px 10px rgba(0,0,0,.25), 0 10px 10px rgba(0,0,0,.2), 0 20px 20px rgba(0,0,0,.15);
 }
-
-span {
-
-}
+/*section.hero*/
 
 
-ul.lista1 {
+/*section.hero*/
+section.hero ul.lista1 {
     padding-top: 20%;
 }
-ul.lista2{
-    padding-top: 20%;
-
-}
-ul.lista3{
+/*section.hero*/
+section.hero ul.lista2{
     padding-top: 20%;
 
 }
-li {
+/*section.hero*/
+section.hero ul.lista3{
+    padding-top: 20%;
+
+}
+/*section.hero*/
+section.hero li {
 
     padding-top: 70px;
     font-family: "Montserrat";
@@ -72,7 +80,8 @@ li {
     text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0,0,0,.1), 0 0 5px rgba(0,0,0,.1), 0 1px 3px rgba(0,0,0,.3), 0 3px 5px rgba(0,0,0,.2), 0 5px 10px rgba(0,0,0,.25), 0 10px 10px rgba(0,0,0,.2), 0 20px 20px rgba(0,0,0,.15);
 
 }
-#slideshow {
+/*section.hero*/
+section.hero #slideshow {
     margin: 50px auto;
     position: relative;
 
@@ -80,14 +89,15 @@ li {
     padding: 0px;
 
 }
-#slideshow > div {
+/*section.hero*/
+section.hero #slideshow > div {
     position: absolute;
     top: 0px;
     left: 0px;
     right: 0px;
     bottom: 0px;
 }
-
+/*section.hero*/
 /*fadein tabele li do obrazków*/
 
 /*#slideshow li:first-child{*/
@@ -104,8 +114,8 @@ li {
 /*opacity: 0;*/
 /*transition: 1s ease-in-out;*/
 /*}*/
-
-.transparent {
+/*section.hero*/
+section.hero .transparent {
     opacity: 1 !important;
 }
 /*znak $ w aureoli*/
@@ -119,14 +129,16 @@ li {
 /*0 0 100px #14213d;*/
 /*}*/
 
+/*section.hero*/
 /*znak $ pulsujący*/
-#sign {
+section.hero #sign {
     color: #fca311;
     text-shadow: 0 0 3vw #14213d;
     animation: neon 1.5s ease infinite;
 
     -webkit-animation: neon 1.5s ease infinite;
 }
+
 @keyframes neon {
     0%,
     100% {
