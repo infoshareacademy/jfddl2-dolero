@@ -2,6 +2,7 @@
 
 body {
     font-size: 1.5em;
+    position: relative;
 }
 
 .show {
@@ -114,11 +115,18 @@ section.navigation .navbar-default .navbar-nav > li > a {
 
     }
 }
+section.navigation .navbar-default .navbar-nav > .active > a,
+section.navigation .navbar-default .navbar-nav > .active > a:hover,
+section.navigation .navbar-default .navbar-nav > .active > a:focus {
+    background-color: transparent;
+    color: #fff;
+}
 
-section.navigation .navbar-default .navbar-nav > li > a:focus,
-section.navigation .navbar-default .navbar-nav > li > a:hover {
-    /*color: #e6cf2d;*/
-    transform: scale(1.1);
+section.navigation .navbar-default .navbar-nav > li > a:hover,
+section.navigation .navbar-default .navbar-nav > li > a:active,
+section.navigation .navbar-default .navbar-nav > li > a:focus {
+    color: #fff;
+    transform: scale(1.2);
 }
 
 section.navigation nav.navbar-default  div.navbar-header a {

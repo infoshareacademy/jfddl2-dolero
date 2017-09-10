@@ -49,3 +49,6 @@ $("#newsletter").click(function() {
         scrollTop: $("section.newsletter").offset().top
     }, 500);
 });
+
+// Call scrollSpy
+$('body').scrollspy({ target: '#spyNav' });

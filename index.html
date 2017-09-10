@@ -18,9 +18,9 @@
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 </head>
-<body>
+<body data-spy="scroll" data-target="spyNav">
 <!--kod Piotrek - NAV -->
-<section class="navigation">
+<section id="spyNav" class="navigation">
     <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">
@@ -31,10 +31,10 @@
             </div>
             <div class="collapse navbar-collapse" id="navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a id="info" href="#">Informacje o produkcje</a></li>
-                    <li><a id="additionalInfo" href="#">Dodatkowe informacje</a></li>
-                    <li><a id="team" href="#">Zespół</a></li>
-                    <li><a id="newsletter" href="#">Newsletter</a></li>
+                    <li><a id="info" href="#infoDestination">Informacje o produkcje</a></li>
+                    <li><a id="additionalInfo" href="#additionalInfoDestination">Dodatkowe informacje</a></li>
+                    <li><a id="team" href="#teamDestination">Zespół</a></li>
+                    <li><a id="newsletter" href="#newsletterDestination">Newsletter</a></li>
                 </ul>
             </div>
         </div>
@@ -44,10 +44,10 @@
     </nav>
 </section>
 <!--koniec kodu Piotrka - NAV -->
-
+<div class="long"></div>
 <!--kod Piotrka - NEWSLETTER -->
 
-<section class="newsletter container-fluid">
+<section id="newsletterDestination" class="newsletter container-fluid">
     <div class="container">
         <div class="col-md-offset-4">
             <h3 class="text-center">MONEY $AVE</h3>
@@ -56,7 +56,7 @@
                   method="POST">
                 <div class="newsletter-form-name col-xs-12 col-md-6">
                     <label class="text-uppercase"><span class="glyphicon glyphicon-user"></span> Twoje imie</label>
-                    <input name="name" type="textarea">
+                    <input name="name" type="text">
                  </div>
                 <div class="newsletter-form-email col-xs-12 col-md-6">
                     <label class="text-uppercase"><span class="glyphicon glyphicon-envelope"></span> Email</label>
@@ -71,31 +71,6 @@
     </div>
 </section>
 <!--koniec kodu Piotrka - NEWSLETTER -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
