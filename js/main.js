@@ -43,3 +43,9 @@ $("#team").click(function() {
         scrollTop: $("section.team").offset().top
     }, 500);
 });
+
+$("#newsletter").click(function() {
+    $('html, body').animate({
+        scrollTop: $("section.newsletter").offset().top
+    }, 500);
+});

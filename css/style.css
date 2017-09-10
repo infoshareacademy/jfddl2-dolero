@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Anton|Lobster|Merriweather|Oxygen&subset=latin-ext');
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,900&subset=latin-ext');
 
 body {
     font-size: 1.5em;
@@ -13,27 +13,36 @@ body {
 }
 
 .big {
-    height: 3em !important;
+    height: 4em !important;
+    background-color: #14213d !important;
+    padding-top: 1em !important;
+}
 
-    background-color: #e5e5e5 !important;
+.long {
+    height: 300vh;
 }
 
 /* ----- section navigation ----- */
-.nav-small {
+section.navigation {
+    transition: .4s;
+}
+
+section.navigation .nav-small {
     padding-top: .5em;
     background-color: #14213d;;
 }
 
-nav.navbar-default {
-    background-color: rgba(177, 179, 174, 0.2);
+section.navigation nav.navbar-default {
+    background-color: rgba(0, 0, 0, 0.42);
     border-color: transparent;
-    font-family: 'Merriweather', serif;
+    font-family: 'Lato', serif;
     padding-top: 2em;
     transition: .8s;
-    min-height: 5em;
+    height: 5.5em;
+
 }
 
-nav.navbar > a {
+section.navigation nav.navbar > a {
     position: fixed;
     bottom: 5%;
     right: 3%;
@@ -57,7 +66,7 @@ nav.navbar > a {
     border: .4px solid #fca311;
 }
 
-nav.navbar > a:hover{
+section.navigation nav.navbar > a:hover{
     transform: scale(1.2);
 }
 
@@ -74,39 +83,20 @@ nav.navbar > a:hover{
     }
 }
 
-nav.navbar-default i {
+section.navigation nav.navbar-default i {
     font-size: 1em;
     animation: rotateY 2s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
 }
 
-.navbar-default .navbar-nav > li > a {
+section.navigation .navbar-default .navbar-nav > li > a {
     color: #fca311;
     text-shadow: 1px 1px #000;
     padding: 0 15px;
+    font-size: .9em;
     transition: .4s;
-}
-
-.navbar-default .navbar-nav > li > a:focus,
-.navbar-default .navbar-nav > li > a:hover {
-    color: #e6cf2d;
-    transform: scale(1.2);
-}
-
-nav.navbar-default  div.navbar-header a {
-    color: #14213d;
-    text-shadow: .2px .2px #ff951e;
-    padding: 0;
-}
-
-nav.navbar-default  div.navbar-header a i {
-    color: #14213d;
-    text-shadow: none;
-}
-
-.long {
-    height: 300vh;
+    text-transform: uppercase;
 }
 
 /*animate*/
@@ -115,28 +105,42 @@ nav.navbar-default  div.navbar-header a i {
         transform: rotateY(0) scale(1);
 
     }
-    50% {
-        text-shadow: .5px .5px #000;
-    }
+
 
     100% {
         transform: rotateY(360deg) scale(1.2);
         color: #fca311;
-        text-shadow: 1px 1px #000;
+
 
     }
 }
 
+section.navigation .navbar-default .navbar-nav > li > a:focus,
+section.navigation .navbar-default .navbar-nav > li > a:hover {
+    /*color: #e6cf2d;*/
+    transform: scale(1.1);
+}
+
+section.navigation nav.navbar-default  div.navbar-header a {
+    color: #ff951e;
+    text-shadow: 1px 1px #000;
+    padding: 0;
+}
+
+section.navigation nav.navbar-default  div.navbar-header a i {
+    color: #14213d;
+}
+
 @media screen and (max-width: 767px) {
-    nav.navbar a {
+    section.navigation nav.navbar a {
         text-align: center;
     }
 
-    nav.navbar a:hover {
+    section.navigation nav.navbar a:hover {
         transform: none !important;
     }
 
-    nav div div.navbar-collapse {
+    section.navigation nav div div.navbar-collapse {
         background-color: #e5e5e5;
     }
 
@@ -146,150 +150,132 @@ nav.navbar-default  div.navbar-header a i {
         background-color: #e5e5e5 !important;
     }
 
-    /*section newsletter*/
-    section.newsletter div div {
-        padding-left: .5em !important;
-    }
-
-    section.newsletter div div p,
-    section.newsletter div div h2 {
-        padding-left: 0;
-    }
-
-    section.newsletter div div i {
-        display: none;
-    }
-
-    section.newsletter div div button {
-        top: 70%;
-        left: 35%;
-    }
-    /*end of section newsletter*/
-
 }
-
-@media screen and (min-width: 740px) and (max-width: 1370px) {
-    section.newsletter div div p {
-        padding-left: .7em;
-    }
-    section.newsletter div div h2 {
-        padding-left: 1.2em;
-    }
-
-    section.newsletter div div i {
-        left: 80%;
-    }
-}
-
-@media screen and (max-width: 1200px) {
-    .container {
-        width: 100%;
-    }
-}
-
 /* ----- end of section navigation ----- */
 
+
 /* ----- section newsletter ----- */
+
 section.newsletter {
-    background-color: #14213d;
-    position: relative;
-    min-height: 11em;
+    background: url(../images/bg-newsletter.jpg);
+    background-size: cover;
+    height: 70vh;
+    padding-top: 25vh;
 }
 
-section.newsletter div div {
-    margin: 0 auto;
-    padding-left: 15em;
+@media screen and (max-width: 991px) {
+    section.newsletter {
+        padding-top: 5vh;
+    }
 }
 
-section.newsletter p ,
-section.newsletter h2 {
-    text-shadow: 1px 1px #000;
+section.newsletter h3 {
+    font-size: 3em;
+    font-weight: 900;
+    letter-spacing: .3em;
+    font-family: "Lato:900", serif;
+}
+
+@media screen and (max-width: 991px) {
+    section.newsletter h3 {
+        font-size: 2em;
+    }
+}
+
+section.newsletter h4 {
+    color: #fca311;
+    font-family: "Lato: 300", serif;
+    text-shadow: .03em .03em #000;
+}
+
+@media screen and (max-width: 991px) {
+    section.newsletter h4 {
+        font-size: 1em;
+        text-shadow: .05em .05em #000;
+    }
+}
+
+section.newsletter div div form {
+    padding-top: 2vh;
+}
+
+section.newsletter div div form div {
+
+    padding: 0;
+    padding: 0 2vw;
+}
+
+section.newsletter div div form div label,
+section.newsletter div div form div input {
+    width: 100%;
+    padding: .2em 0 0 1em;
+
+}
+
+section.newsletter div div form div label {
+    background-color: #fff;
+    margin: 0;
+    font-family: "Lato:300", serif;
+    color: #9f9f9f;
+    padding-bottom: .2em;
+}
+
+@media screen and (max-width: 991px) {
+    section.newsletter div div form div label {
+        font-size: .8em;
+    }
+}
+
+section.newsletter div div form div input {
+    border: none;
+    font-family: "Lato", serif;
+}
+
+section.newsletter div div form > button {
+    max-width: 16vw;
+    min-width: 8vw;
+    padding: 1.5em 1.5em;
+    background-color: #fca311;
+    font-family: "Lato:900", serif;
     text-transform: uppercase;
     font-weight: bold;
-    z-index: 20;
+    margin-top: 4vh;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
 }
 
-
-section.newsletter p {
-    color: #fca311;
-    font-size: .85em;
-    padding: 1.5em 0 0 3em;
-    margin: 0;
-
+@media screen and (max-width: 991px) {
+    section.newsletter div div form > button {
+        min-width: 50vw;
+        padding: 1em 0;
+    }
 }
 
-section.newsletter h2 {
-    color: #e5e5e5;
-    font-size: 2em;
-    padding-left: 4em;
-    margin: 0;
-
+section.newsletter div div form button span {
+    padding-left: 1em;
 }
 
-section.newsletter i.fa-question-circle {
-    position: absolute;
-    top: 50%;
-    left: 57%;
-    transform: translate(-50%, -50%);
-    font-size: 4em;
-    color: #fca311;
-    text-shadow: 2px 2px #000;
+section.newsletter div div form button:hover span {
+    animation: runningEnvelope;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
 }
 
-section.newsletter button {
-    color: #fca311;
-    background-color: transparent;
-    border-radius: 5px;
-    border-color: #fca311;
-    position: absolute;
-    top: 60%;
-    left: 45%;
-    transition: .5s;
-    font-weight: bold;
+/*animation*/
+
+@keyframes runningEnvelope {
+    0% {
+        transform: rotate(-360deg);
+    }
+
+    20% {
+         left: 0;
+    }
+
+    100% {
+        transform: rotate(360);
+        left: 50%;
+    }
 }
-div.modal div.modal-footer button,
-section.newsletter button:hover,
-section.newsletter button:active {
-    color: #14213d;
-    background-color: #fca311;
-    border-color: #fca311;
-}
-
-/*modal*/
-.modal div.modal-content {
-    background-color: #14213d;
-    color: #fca311;
-    text-align: center;
-    font-weight: bold;
-}
-
-.modal .modal-header {
-    width: 50%;
-    margin: 0 auto;
-}
-
-div.modal div.modal-body {
-    padding-top: 10%;
-}
-
-div.modal div.modal-footer {
-    border-top: none;
-}
-
-div.modal div.modal-footer button {
-    color: #fca311;
-    background-color: transparent;
-    border-radius: 5px;
-    border-color: #fca311;
-    transition: .5s;
-    font-weight: bold;
-}
-
-
-.modal input {
-    color: #000;
-    padding: 5px;
-}
-
-
 /* ----- end of section newsletter ----- */

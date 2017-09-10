@@ -19,10 +19,9 @@
     <![endif]-->
 </head>
 <body>
-<!--kod Piotrek-->
-
+<!--kod Piotrek - NAV -->
+<section class="navigation">
     <nav class="navbar navbar-default navbar-fixed-top">
-
         <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1">
@@ -32,56 +31,46 @@
             </div>
             <div class="collapse navbar-collapse" id="navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#">Informacje o produkcje</a></li>
-                    <li><a href="#">Dodatkowe informacje</a></li>
-                    <li><a href="#">Zespół</a></li>
+                    <li><a id="info" href="#">Informacje o produkcje</a></li>
+                    <li><a id="additionalInfo" href="#">Dodatkowe informacje</a></li>
+                    <li><a id="team" href="#">Zespół</a></li>
+                    <li><a id="newsletter" href="#">Newsletter</a></li>
                 </ul>
             </div>
         </div>
         <a id="slideTopBtn">
             <span class="glyphicon glyphicon-arrow-up"></span>
         </a>
-
     </nav>
+</section>
+<!--koniec kodu Piotrka - NAV -->
 
-<!--koniec kodu Piotrka-->
-
-<!--kod Piotrka-->
-<div id="newsletterModal" class="modal fade" tabindex="-1" role="dialog">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                <h4 class="modal-title">NEWSLETTER</h4>
-            </div>
-            <div class="modal-body">
-                <form>
-                    <label>E-mail</label>
-                    <input type="textarea" placeholder="Wpisz swojego e-maila">
-                </form>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Cofnij</button>
-                <button type="button" class="btn btn-primary">Wyślij</button>
-            </div>
-        </div><!-- /.modal-content -->
-    </div><!-- /.modal-dialog -->
-</div><!-- /.modal -->
-<div class="long"></div>
+<!--kod Piotrka - NEWSLETTER -->
 
 <section class="newsletter container-fluid">
     <div class="container">
-        <div>
-            <p>Chcesz znać nowości dotyczące</p>
-            <h2>
-                money<i class="fa fa-usd transform-right" aria-hidden="true"></i>ave
-                <i class="fa fa-question-circle" aria-hidden="true"></i>
-            </h2>
-            <button class="btn" data-toggle="modal" data-target="#newsletterModal">Zapisz się!</button>
+        <div class="col-md-offset-4">
+            <h3 class="text-center">MONEY $AVE</h3>
+            <h4 class="text-center">Zapisz się na darmowego newslettera</h4>
+            <form class="row" action="https://formspree.io/piotr.siwek.90@gmail.com"
+                  method="POST">
+                <div class="newsletter-form-name col-xs-12 col-md-6">
+                    <label class="text-uppercase"><span class="glyphicon glyphicon-user"></span> Twoje imie</label>
+                    <input name="name" type="textarea">
+                 </div>
+                <div class="newsletter-form-email col-xs-12 col-md-6">
+                    <label class="text-uppercase"><span class="glyphicon glyphicon-envelope"></span> Email</label>
+                    <input name="email" type="email">
+                </div>
+                <button class="col-xs-offset-3 col-sm-offset-2 col-md-offset-8">
+                    Wyślij
+                    <span class="glyphicon glyphicon-envelope"></span>
+                </button>
+            </form>
         </div>
     </div>
 </section>
-<!--koniec kodu Piotrka-->
+<!--koniec kodu Piotrka - NEWSLETTER -->
 
 
 
