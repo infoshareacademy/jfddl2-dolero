@@ -43,3 +43,64 @@ $("#team").click(function() {
         scrollTop: $("section.team").offset().top
     }, 500);
 });
+
+$("#newsletter").click(function() {
+    $('html, body').animate({
+        scrollTop: $("section.newsletter").offset().top
+    }, 500);
+});
+
+// Call scrollSpy
+$('body').scrollspy({ target: '#spyNav' });
+
+
+//Skrypty Jarka
+
+
+    document.addEventListener("scroll", animate);
+
+    function modifyText() {
+        for(var i=1; i<7; i++) {
+            document.getElementById("look" + i).setAttribute("style", "transform: translateX(0)");
+
+        }
+    }
+
+    function animate() {
+        var kon = window.pageYOffset;
+        if (kon > 200) {
+            modifyText();
+        }
+    }
+    
+    
+    //Skrypty Andrzeja
+    $(document).ready(function() {
+    $("#slideshow > div:gt(0)").hide();
+
+    var shownSlide = 0;
+
+    function afterSlide($currentSlide) {
+        console.log($currentSlide.find('li:first-child'));
+    }
+
+    function nextSlide(callback) {
+        var $slideshowItems = $("#slideshow .hero-image");
+        $slideshowItems.fadeOut(4000);
+        var nextSlide = shownSlide + 1;
+
+        $($slideshowItems[nextSlide]).fadeIn(4000);
+        shownSlide = nextSlide;
+        if ((shownSlide + 1) === $slideshowItems.length)
+            shownSlide = -1;
+        callback($($slideshowItems[nextSlide]));
+    }
+
+    setInterval(function () {
+        nextSlide(afterSlide)
+    }, 5000);
+    // $('#slideshow li:first-child').addClass('transparent');
+    // $('#slideshow li:nth-child(2)').addClass('transparent');
+
+
+});
