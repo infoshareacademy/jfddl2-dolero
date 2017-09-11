@@ -2,18 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c1bff97b-2ff8-4a3b-accf-ec7a888c8931" name="Default" comment="Merge branch 'featurelist' of https://github.com/infoshareacademy/jfddl2-dolero into featurelist&#10;&#10;# Conflicts:&#10;#&#9;style.css">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/.alerts.jpg-autosave.kra" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/.couple.jpg-autosave.kra" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/.currency.jpg-autosave.kra" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/.notification.jpg-autosave.kra" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/.reports.jpg-autosave.kra" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/.saving.jpg-autosave.kra" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/pretty_face_by_red_head_madness-d72qhc9.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/jfddl2-dolero.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/jquery-3.2.1.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/jquery-3.2.1.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/style.css" afterPath="$PROJECT_DIR$/css/style.css" />
     </list>
@@ -29,21 +17,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="461">
-              <caret line="151" column="18" lean-forward="false" selection-start-line="151" selection-start-column="18" selection-end-line="151" selection-end-column="18" />
+            <state relative-caret-position="83">
+              <caret line="204" column="0" lean-forward="true" selection-start-line="204" selection-start-column="0" selection-end-line="204" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="346">
-              <caret line="471" column="21" lean-forward="false" selection-start-line="471" selection-start-column="21" selection-end-line="471" selection-end-column="21" />
+            <state relative-caret-position="141">
+              <caret line="823" column="23" lean-forward="true" selection-start-line="823" selection-start-column="23" selection-end-line="823" selection-end-column="23" />
               <folding />
             </state>
           </provider>
@@ -61,6 +49,10 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>pane</find>
+      <find>flex</find>
+      <find>h5</find>
+      <find>flex_item</find>
+      <find>h3</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -87,8 +79,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="367" />
-    <option name="y" value="42" />
+    <option name="x" value="192" />
+    <option name="y" value="46" />
     <option name="width" value="1399" />
     <option name="height" value="1000" />
   </component>
@@ -171,12 +163,12 @@
       <workItem from="1504767599850" duration="603000" />
       <workItem from="1504787973473" duration="6090000" />
       <workItem from="1504860602275" duration="1558000" />
-      <workItem from="1505127679648" duration="47000" />
+      <workItem from="1505127679648" duration="2699000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="44146000" />
+    <option name="totallyTimeSpent" value="46798000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -188,7 +180,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="367" y="42" width="1399" height="1000" extended-state="0" />
+    <frame x="192" y="46" width="1399" height="1000" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3786337" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -476,18 +468,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
+    <entry file="file://$PROJECT_DIR$/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="461">
-          <caret line="151" column="18" lean-forward="false" selection-start-line="151" selection-start-column="18" selection-end-line="151" selection-end-column="18" />
+        <state relative-caret-position="141">
+          <caret line="823" column="23" lean-forward="true" selection-start-line="823" selection-start-column="23" selection-end-line="823" selection-end-column="23" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/style.css">
+    <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="346">
-          <caret line="471" column="21" lean-forward="false" selection-start-line="471" selection-start-column="21" selection-end-line="471" selection-end-column="21" />
+        <state relative-caret-position="83">
+          <caret line="204" column="0" lean-forward="true" selection-start-line="204" selection-start-column="0" selection-end-line="204" selection-end-column="0" />
           <folding />
         </state>
       </provider>

@@ -4,7 +4,10 @@ body {
     font-size: 1.5em;
     position: relative;
 }
-
+h5 {
+    font-size: 1.1em;
+    text-transform: uppercase;
+}
 .show {
     display: block !important;
 }
@@ -297,7 +300,7 @@ section.newsletter div div form button:hover span {
     }
 
     100% {
-        transform: rotate(360);
+        /*transform: rotate(360);*/
         left: 50%;
     }
 }
@@ -820,7 +823,7 @@ section.hero #slideshow {
     margin: 50px auto;
     position: relative;
 
-    height: 90%;
+    height: 100%;
     padding: 0px;
 
 }
@@ -898,6 +901,10 @@ section.hero #sign {
      height:68vh;
      width: 100%;
  }
+
+ section.team h3 {
+     font-weight:bold;
+ }
 div.section {
     position: absolute;
     top: 50%;
@@ -906,9 +913,10 @@ div.section {
 }
 
 div.section h2{
-    text-align:center;
-    padding-bottom: 1em;
-    color: #14213d;
+    font-size: 3.5em;
+    text-align: center;
+    font-weight: bold;
+    padding: 0.5em 0;
 }
 
 div.section h3 {
@@ -929,6 +937,9 @@ div.section h4{
 .flex_item:hover {
     transform: scale(1.1);
     color: #14213d;
+}
+div.flex_item {
+    transition: .8s;
 }
 
 .photo {
