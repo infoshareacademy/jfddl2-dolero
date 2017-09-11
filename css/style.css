@@ -469,6 +469,7 @@ div.col-sm-12 h2 {
     font-size: 3.5em;
     text-align: center;
     font-weight: bold;
+    padding: 0.5em 0;
 }
 
 div.addinfo .col-sm-6 {
