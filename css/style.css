@@ -326,6 +326,7 @@ section.container-jm .section-title h2 {
     text-align: center;
 
     font-weight: bold;
+    padding: 5% 0;
 }
 
 section.container-jm .section-title {
@@ -472,7 +473,7 @@ div.col-sm-12 h2 {
     font-size: 3.5em;
     text-align: center;
     font-weight: bold;
-    padding: 0.5em 0;
+    padding: 1em 0 0.4em;
 }
 
 div.addinfo .col-sm-6 {
@@ -898,7 +899,7 @@ section.hero #sign {
  section.team {
      position: relative;
      padding-top: 2vh;
-     height:68vh;
+     height:57vh;
      width: 100%;
  }
 
@@ -907,7 +908,7 @@ section.hero #sign {
  }
 div.section {
     position: absolute;
-    top: 50%;
+    top: 46%;
     left: 17%;
     transform: translate(-9%, -50%);
 }
