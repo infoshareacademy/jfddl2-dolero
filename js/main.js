@@ -6,8 +6,7 @@ for (i=0;i<icons.length;i++) {
     icons[3].setAttribute('style', 'transition-delay:' +(0.8)+'s');
 }
 
-inView('#additionalInfoDestination')
-    .on('enter', addInfofunc);
+inView('#additionalInfoDestination').on('enter', addInfofunc);
 
 
 function addInfofunc() {
@@ -17,7 +16,7 @@ function addInfofunc() {
 }
 
 
-
+inView('#sentencja').on('enter', move);
 
 
 
@@ -78,12 +77,13 @@ $('body').scrollspy({ target: '#spyNav' });
 
 // Jarek
 
-// document.getElementById("text").setAttribute("class", "hide");
+// document.getElementById("text").setAttribute("class", "hider");
 
 
 var text = document.getElementById("text").textContent;
 
-function literki() {
+
+(function lettersAnimation() {
     var array = []
 
     for (var i = 0; i < text.length; i++) {
@@ -99,7 +99,7 @@ function literki() {
         // div.textContent = content;
         div.class = 'letter';
 
-        document.getElementById('text').appendChild(div)
+        document.getElementById('sentence').appendChild(div)
         // document.body.appendChild(div)
     }
     for (var i = 0; i < text.length; i++) {
@@ -113,17 +113,17 @@ function literki() {
 
     }
 
-}
+})()
 
 function move() {
     for (var i = 0; i < text.length; i++) {
 
         document.getElementById("letter" + i).setAttribute("class", "letter2")
 
-        document.getElementById("letter" + i).setAttribute("style", "transform:translate(0)"+"scale(1)");
-
-    }
-}
+        document.getElementById("letter" + i).setAttribute("style", "transition-delay:" + i * 0.01 + "s");
+        // document.getElementById("text").setAttribute("class", "showme");
+        // document.getElementById("text").style.display = 'block';
+}}
 
 
 

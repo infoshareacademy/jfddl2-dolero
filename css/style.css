@@ -309,6 +309,8 @@ section.newsletter div div form button:hover span {
 
 /*Style Jarka*/
 
+.letter2{: translate(0) scale(1) !important;}
+
 div.spacer {
     height: 80px;
 }
@@ -490,7 +492,10 @@ section.add-info .circle {
     transform: translate(-50%, -50%);
     border-radius: 100%;
 }
-
+/*section.add-info .suitMan{*/
+    /*top:50%;*/
+    /*transform: translateX(-50%);*/
+/*}*/
 section.add-info img {
     width: 20vw;
     height: auto;
@@ -526,7 +531,7 @@ section.add-info .col-sm-12 .icon2 {
 
 /*Letters animation*/
 
-.hide {
+#text {
     display: none;
 }
 
@@ -535,7 +540,7 @@ section.add-info .col-sm-12 .icon2 {
     transform: scale(0.1);
     transition: all 3s linear;
     margin: 2px;
-    opacity: 1;
+    opacity: 0;
 
 }
 
@@ -544,10 +549,13 @@ section.add-info .col-sm-12 .icon2 {
     transition: all 3s linear;
     margin: 2px;
     opacity: 1;
-    background-color: yellow;
     display: inline-block;
+    color: #9e9c9f;
+    font-style: italic;
+    font-size: 1.8vw;
 
 }
+
 
 @media screen and (max-width: 780px) {
 section.add-info .fa, section.add-info img{
