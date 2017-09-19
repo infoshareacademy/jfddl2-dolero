@@ -329,9 +329,14 @@ section.features .container {
 }
 
 section.features h2 {
+    font-size: 34px;
+    color: #14213d;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    letter-spacing: -1px;
+    margin: 0 0 15px 0;
     text-align: center;
-    font-weight: bold;
-    margin-bottom: 30px;
+    text-transform: uppercase;
 }
 
 section.features p {
@@ -439,6 +444,16 @@ section.add-info {
 
     transition: all 2s linear;
 
+}
+section.add-info h2 {
+    font-size: 34px;
+    color: #14213d;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    letter-spacing: -1px;
+    margin: 0 0 15px 0;
+    text-align: center;
+    text-transform: uppercase;
 }
 
 section.add-info h3 {
@@ -660,6 +675,22 @@ section.about-us h3 {
 }
 
 section.about-us h6 {
+    font-size: 16px;
+    color: #888888;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    text-align: center;
+    margin: 0 0 60px 0;
+}
+section.features h6 {
+    font-size: 16px;
+    color: #888888;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    text-align: center;
+    margin: 0 0 60px 0;
+}
+section.add-info h6 {
     font-size: 16px;
     color: #888888;
     font-family: 'Open Sans', sans-serif;
@@ -966,12 +997,12 @@ section.hero #slide1, #slide2, #slide3 {
 
 /*sekscja hero*/
 section.hero #slide1 {
-    background: url("../images/shutterstock_10611928.jpg");
+    background: url("../images/shutterstock_10611928.jpg") center;
     background-size: cover;
 }
 /*koniec sekcji hero*/
 section.hero #slide2 {
-    background: url("../images/andrei-coman-302139.jpg") bottom;
+    background: url("../images/andrei-coman-302139.jpg") center;
     background-size: cover;
 }
 section.hero #slide3 {
@@ -1070,7 +1101,7 @@ section.hero a.btn1{
     /*float: left;*/
     margin: 1vw;
     width: 9vw;
-    height: 14vh;
+    height: 9vw;
     border: 1px solid #fff;
 }
 section.hero a.btn2 {
@@ -1080,7 +1111,7 @@ section.hero a.btn2 {
     /*float: left;*/
     margin: 1vw;
     width: 9vw;
-    height: 14vh;
+    height: 9vw;
     border: 1px solid #fff;
 }
 section.hero a.btn3 {
@@ -1090,7 +1121,7 @@ section.hero a.btn3 {
     /*float: left;*/
     margin: 1vw;
     width: 9vw;
-    height: 14vh;
+    height: 9vw;
     border: 1px solid #fff;
 
 }
