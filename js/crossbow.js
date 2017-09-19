@@ -1,6 +1,7 @@
 var crossbow = document.querySelector('#crossbow');
 var arrow = document.querySelector('.arrow');
 var tang;
+var screenHeight = window.innerHeight;
 
 function radianToDegree(tang) {
     // change radians to degrees
@@ -9,6 +10,7 @@ function radianToDegree(tang) {
 
 document.addEventListener('mousemove', function (event) {
     // crossbow rotate & arrow rotate
+    var arrow = document.querySelector('.arrow');
     var mouseX = event.clientX;
     var mouseY = event.clientY;
     var centerScreen = window.innerWidth / 2;
@@ -35,34 +37,16 @@ document.addEventListener('mousemove', function (event) {
     var y2 = screenHeight;
     var a = (y2 - y1) / (x2 - x1);
     var b = y1 - a * x1;
-    var myX = -b/a;
+    var myX = -b / a;
 
 
-    console.log(myX, a, b, x1, y1,x2,y2);
+    console.log(myX, a, b, x1, y1, x2, y2);
 
     var rect = arrow.getBoundingClientRect();
     console.log(rect.top, rect.left);
 
-//        var a = (mouseX-centerScreen)/triangleHeight;
-//        var b = (-a)*centerScreen;
-//        var y = a * centerScreen+ b;
-//        console.log('//////////////////////////////////////')
-//        console.log('//////////////////////////////////////')
-//        console.log('A: ', a, "B ", b, 'Y: ' , (a*mouseX)+b);
-//        console.log('//////////////////////////////////////')
-//        console.log('//////////////////////////////////////')
 });
 
-
-//arrow target
-//        triangleHeight = a * mouseX + b;
-//        0 = a * centerScreen + b;
-
-
-// console.log("A: ", a, "B: ", b);
-//arrow target
-console.log('tang: ', tang);
-console.log('///////////////////////////////');
 document.addEventListener('click', function (event) {
 
     var mouseX = event.clientX;
@@ -75,10 +59,7 @@ document.addEventListener('click', function (event) {
     (document.querySelector('.arrows')).appendChild(arrowDiv);
 
     var arrow = document.querySelector('.arrow');
-    var centerScreen = window.innerWidth / 2;
-    var screenHeight = window.innerHeight;
-    var triangleHeight = screenHeight - mouseY;
-    var triangleWidth = mouseX - centerScreen;
+
 
     var rect = arrow.getBoundingClientRect();
     console.log(rect.top, rect.right, rect.bottom, rect.left);
@@ -92,7 +73,6 @@ document.addEventListener('click', function (event) {
     var myX = -b/a;
 
 
-    console.log(myX, a, b, x1, y1,x2,y2);
 
     arrow.style.bottom =screenHeight+ 'px';
     arrow.style.left = myX + 'px';
