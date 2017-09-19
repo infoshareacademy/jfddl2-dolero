@@ -958,6 +958,7 @@ section.about-us .delay-03s {
 /*sekcja hero*/
 
 
+/*sekcja hero*/
 section.hero body {
     /*width: 100%;*/
     /*height: auto;*/
@@ -975,7 +976,7 @@ section.hero #start {
     margin: 0;
     padding: 0;
     opacity: 1;
-    font-size: 4.5vw;
+    font-size: 3.5vw;
     background: url("../images/shutterstock_10611928.jpg");
     background-size: cover;
     color: #342c2a;
@@ -997,12 +998,12 @@ section.hero #slide1, #slide2, #slide3 {
 
 /*sekscja hero*/
 section.hero #slide1 {
-    background: url("../images/shutterstock_10611928.jpg") center;
+    background: url("../images/shutterstock_10611928.jpg");
     background-size: cover;
 }
 /*koniec sekcji hero*/
 section.hero #slide2 {
-    background: url("../images/andrei-coman-302139.jpg") center;
+    background: url("../images/andrei-coman-302139.jpg") bottom;
     background-size: cover;
 }
 section.hero #slide3 {
@@ -1033,19 +1034,19 @@ section.hero p {
     /*0 20px 20px rgba(0,0,0,.15);*/
 }
 section.hero p.text0 {
-    margin-top: 13vh;
+    margin-top: 30vh;
 }
 section.hero p.text1 {
-    margin-top: 13vh;
+    margin-top: 30vh;
 }
 section.hero p.text2 {
     text-align: right;
     margin-right: 3vw;
-    margin-top: 13vh;
+    margin-top: 20vh;
 }
 section.hero p.text3 {
     text-align: right;
-    margin-top: 13vh;
+    margin-top: 20vh;
     margin-right: 5vw;
 }
 
@@ -1077,7 +1078,7 @@ section.hero .navigation {
 }
 
 section.hero .btn {
-    margin-left: 9vw;
+    margin-left: 8vw;
     border-radius: 100%;
     float: left;
     opacity: 0.8;
@@ -1143,12 +1144,12 @@ section.hero #slide1:target, #slide2:target, #slide3:target {
 
 @keyframes slide {
     0% { font-size: 0vw; opacity: 1;}
-    100% { font-size: 4.1vw; opacity: 1;}
+    100% { font-size: 3.5vw; opacity: 1;}
 }
 /*!*call to action*/
 section.hero figure{
     position: absolute;
-    top: 57%;
+    top: 55%;
     left:32%;
     z-index: 5;
     width:30vw;

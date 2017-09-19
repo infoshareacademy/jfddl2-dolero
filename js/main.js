@@ -20,6 +20,7 @@ inView('#sentencja').on('enter', move);
 
 
 
+
 var slideTopBtn = document.getElementById('slideTopBtn');
 
 document.addEventListener('scroll', showButton);
