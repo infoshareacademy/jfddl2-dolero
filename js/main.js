@@ -106,7 +106,7 @@ var text = document.getElementById("text").textContent;
     for (var i = 0; i < text.length; i++) {
         var content = document.createTextNode(array[i])
         var los = (Math.random() - 0.5) * 1000
-        document.getElementById("letter" + i).setAttribute("style", "transform:translate(" + los + "px, " + los + "px)");
+        document.getElementById("letter" + i).setAttribute("style", "transform:translateY(" + los + "px");
 
         document.getElementById('letter' + i).appendChild(content);
         document.getElementById("letter" + i).setAttribute("class", "letter");
