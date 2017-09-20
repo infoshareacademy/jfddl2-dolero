@@ -46,9 +46,12 @@ document.addEventListener('click', function (event) {
         arrow.remove();
     }, 1200);
 
+    //arrow remove @TO DO
+
     setTimeout(function () {
         var crossbow = document.querySelector('#crossbow');
         var crossbowTransformProp = crossbow.style.transform;
+
         var arrowDiv = document.createElement('img');
         arrowDiv.className = "arrow";
         arrowDiv.src = "images/spear_small.svg";

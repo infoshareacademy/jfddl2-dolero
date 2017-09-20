@@ -8,8 +8,21 @@
 
 .arrow {
     width: 1vw;
-    height: auto;
+    height: 8vw;
     position: fixed;
     left: 50%;
     bottom: 2vh;
+    background: url('../images/spear_small.svg');
+    background-repeat: no-repeat;
+
+}
+
+div.arrows div.arrow div.line {
+    width: 1px;
+    height: 1px;
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    background-color: red;
+
 }
