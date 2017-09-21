@@ -38,53 +38,62 @@ document.addEventListener('mousemove', function (event) {
 document.addEventListener('click', function (event) {
     var arrow = document.querySelector('.arrow');
     console.log('arrow', arrow, !arrow);
-    if (!arrow) return;
-    var mouseX = event.clientX;
-    var mouseY = event.clientY;
+    if (!arrow) {
+        return;
 
-    setTimeout(function () {
-        arrow.remove();
-    }, 1200);
+    } else {
+        var mouseX = event.clientX;
+        var mouseY = event.clientY;
 
-    //arrow remove @TO DO
-
-    setTimeout(function () {
-        var crossbow = document.querySelector('#crossbow');
-        var crossbowTransformProp = crossbow.style.transform;
-
-        var arrowDiv = document.createElement('div');
-        var arrowInsideDiv = document.createElement('div');
-
-        arrowDiv.className = "arrow";
-        arrowInsideDiv.className = "line";
-
-        arrowDiv.appendChild(arrowInsideDiv);
-
-        arrowDiv.style.transform = crossbowTransformProp;
-        (document.querySelector('.arrows')).appendChild(arrowDiv);
-    }, 1500);
+        setTimeout(function () {
+            arrow.remove();
+        }, 1050);
 
 
-    var rect = arrow.getBoundingClientRect();
-    // console.log(rect.top, rect.right, rect.bottom, rect.left);
+        // setInterval(function(){
+        //     console.log(arrow.style.bottom, window.innerHeight+'px', arrow.style.bottom >= window.innerHeight+'px');
+        //     // if(arrow.style.bottom >= window.innerHeight+'px')
+        //     //     arrow.remove();
+        // }, 50 );
 
-    var x1 = mouseX;
-    var y1 = mouseY;
-    var x2 = rect.left;
-    var y2 = rect.top;
-    var a = (y2 - y1) / (x2 - x1);
-    var b = y1 - a * x1;
-    var myX = -b / a;
+        setTimeout(function () {
+            var crossbow = document.querySelector('#crossbow');
+            var crossbowTransformProp = crossbow.style.transform;
+
+            var arrowDiv = document.createElement('div');
+            var arrowInsideDiv = document.createElement('div');
+
+            arrowDiv.className = "arrow";
+            arrowInsideDiv.className = "line";
+
+            arrowDiv.appendChild(arrowInsideDiv);
+
+            arrowDiv.style.transform = crossbowTransformProp;
+            (document.querySelector('.arrows')).appendChild(arrowDiv);
+        }, 1100);
 
 
-    arrow.style.bottom = screenHeight + 'px';
-    arrow.style.left = myX + 'px';
-    arrow.style.transition = '1s';
-    // console.log('/////////////////////////////////');
-    // console.log('arrow.style.bottom', arrow.style.bottom, 'mouseX * tang', mouseX * tang);
-    // console.log('/////////////////////////////////');
+        var rect = arrow.getBoundingClientRect();
+        // console.log(rect.top, rect.right, rect.bottom, rect.left);
 
-});
+        var x1 = mouseX;
+        var y1 = mouseY;
+        var x2 = rect.left;
+        var y2 = rect.top;
+        var a = (y2 - y1) / (x2 - x1);
+        var b = y1 - a * x1;
+        var myX = -b / a;
+
+
+        arrow.style.bottom = screenHeight + 'px';
+        arrow.style.left = myX + 'px';
+        arrow.style.transition = '1s';
+        // console.log('/////////////////////////////////');
+        // console.log('arrow.style.bottom', arrow.style.bottom, 'mouseX * tang', mouseX * tang);
+        // console.log('/////////////////////////////////');
+    }
+})
+;
 
 
 
