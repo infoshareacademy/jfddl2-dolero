@@ -52,9 +52,14 @@ document.addEventListener('click', function (event) {
         var crossbow = document.querySelector('#crossbow');
         var crossbowTransformProp = crossbow.style.transform;
 
-        var arrowDiv = document.createElement('img');
+        var arrowDiv = document.createElement('div');
+        var arrowInsideDiv = document.createElement('div');
+
         arrowDiv.className = "arrow";
-        arrowDiv.src = "images/spear_small.svg";
+        arrowInsideDiv.className = "line";
+
+        arrowDiv.appendChild(arrowInsideDiv);
+
         arrowDiv.style.transform = crossbowTransformProp;
         (document.querySelector('.arrows')).appendChild(arrowDiv);
     }, 1500);
