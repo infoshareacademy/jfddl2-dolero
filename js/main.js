@@ -44,7 +44,7 @@ $("#slideTopBtn, #mainLogo").click(function() {
 
 //------------ jQuery slide to sections
 
-$("#features").click(function() {
+$(".features").click(function() {
     $('html, body').animate({
         scrollTop: $("section.features").offset().top
     }, 500);

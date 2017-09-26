@@ -81,9 +81,14 @@ section.navigation .navbar-default a:hover::after {
     }
 }
 
-section.navigation .company-logo {
-    max-width: 4em;
-    height: auto;
+section.navigation .navbar-header > span {
+    line-height: 74px;
+    font-size: 2em;
+    color: #14213d;
+}
+
+section.navigation .navbar-header span:hover {
+    cursor: pointer;
 }
 
 section.navigation h2 {
@@ -367,7 +372,7 @@ section.features h3 {
 
 section.sentence {
     height: 18vw;
-    background-color: black;
+    background-color: #14213d;
     position: relative;
     margin-top: 15vh;
     margin-bottom: 3vh;
@@ -384,7 +389,7 @@ section.sentence p {
 section.sentence div.sentenceBox {
     margin: auto;
     width: 100%;
-
+    text-align: center;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -589,6 +594,7 @@ Float Elements
 section.about-us .fl-lt {
     float: left;
 }
+
 
 section.about-us .fl-rt {
     float: right;
