@@ -1035,10 +1035,10 @@ section.hero p {
     /*0 20px 20px rgba(0,0,0,.15);*/
 }
 section.hero p.text0 {
-    margin-top: 30vh;
+    margin-top: 20vh;
 }
 section.hero p.text1 {
-    margin-top: 30vh;
+    margin-top: 20vh;
 }
 section.hero p.text2 {
     text-align: right;
@@ -1071,37 +1071,47 @@ section.hero .container {
 
 section.hero .navigation {
     position: absolute;
-    /*width: 100%;*/
     bottom: 10%;
     left: 15%;
     margin: 0;
     padding: 0;
+    /*top: 65%;*/
+    /*left:33.5vw;*/
+    /*z-index: 5;*/
+    /*width:40vw;*/
+    /*height:6vh;*/
+    /*position: absolute;*/
 }
 
 section.hero .btn {
-    margin-left: 8vw;
+    margin-left: 9vw;
     border-radius: 100%;
     float: left;
     opacity: 0.8;
-    box-shadow: 0px 0px 10px rgba(0,0,0,0.3);
+    /*box-shadow: 0px 0px 10px rgba(0,0,0,0.3);*/
     transition: 0.1s ease-in;
+   /*height: 100%;*/
+    /*border-radius: 100%;*/
+    /*!*float: left;*!*/
+    /*opacity: 0.8;*/
+    /*transition: 0.1s ease-in;*/
 }
 
 section.hero .btn a {
     display: block;
-    color: #fff;
-    text-decoration: none;
-    line-height: 100px;
-    letter-spacing: 2px;
-    font-size: 12px;
-    text-align: center;
+    /*color: #fff;*/
+    /*text-decoration: none;*/
+    /*line-height: 100px;*/
+    /*letter-spacing: 2px;*/
+    /*font-size: 12px;*/
+    /*text-align: center;*/
 }
 section.hero a.btn1{
     background: url("../images/shutterstock_10611928.jpg")bottom;
     background-size: cover;
     border-radius: 100%;
     /*float: left;*/
-    margin: 1vw;
+    /*margin: 1vw;*/
     width: 9vw;
     height: 9vw;
     border: 1px solid #fff;
@@ -1111,7 +1121,7 @@ section.hero a.btn2 {
     background-size: 100% 100%;
     border-radius: 100%;
     /*float: left;*/
-    margin: 1vw;
+    /*margin: 1vw;*/
     width: 9vw;
     height: 9vw;
     border: 1px solid #fff;
@@ -1121,7 +1131,7 @@ section.hero a.btn3 {
     background-size: cover;
     border-radius: 100%;
     /*float: left;*/
-    margin: 1vw;
+    /*margin: 1vw;*/
     width: 9vw;
     height: 9vw;
     border: 1px solid #fff;
@@ -1151,7 +1161,7 @@ section.hero #slide1:target, #slide2:target, #slide3:target {
 section.hero figure{
     position: absolute;
     top: 55%;
-    left:32%;
+    left:34vw;
     z-index: 5;
     width:30vw;
     height:6vh;
@@ -1164,7 +1174,7 @@ section.hero figure div{
     transition:0.25s;
 }
 section.hero figure:hover div{
-    transform:rotateX(-90deg);}
+    transform:rotateX(-180deg);}
 section.hero span{
     text-decoration: none;
     width:100%;
@@ -1184,12 +1194,12 @@ section.hero span:nth-child(1){
     background-color:black;
     color: white;
     font-weight: bold;
-    transform: translate3d(0, 0, 30px);
+    transform: translate3d(0, 0, 25px);
 }
 section.hero span:nth-child(2){
     /*text-decoration: none;*/
     color:white;
     background-color: black;
     font-weight: bold;
-    transform: rotateX(90deg) translate3d(0, 0, 30px);}
+    transform: rotateX(180deg) translate3d(0, 0, 25px);}
 /*koniec call to action*/
