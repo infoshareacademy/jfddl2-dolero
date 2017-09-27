@@ -72,7 +72,18 @@ $("#newsletter").click(function() {
 // Call scrollSpy
 $('body').scrollspy({ target: '#spyNav' });
 
+//show team section
 
+document.addEventListener('scroll', showTeam);
+
+function showTeam() {
+
+    const sectionTeamPosition = $("section.about-us").offset().top;
+    const windowPosition = window.pageYOffset;
+
+    if(sectionTeamPosition - 400 <= windowPosition)
+        $("div#teamShow").css('opacity', '1');
+}
 
 
 

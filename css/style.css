@@ -655,9 +655,14 @@ section.about-us {
     color: #888888;
     margin: 0;
     text-align: center;
-    margin-bottom: 40px;
+    margin-bottom: 60px;
 }
-
+/*-----------------PS add*/
+div#teamShow {
+    opacity: 0;
+    transition: 2s;
+}
+/*-----------------end of PS add*/
 section.about-us h2 {
     font-size: 34px;
     color: #14213d;
@@ -913,6 +918,16 @@ section.about-us .delay-03s {
         float: none;
         margin: 0 auto;
     }
+
+    /*------------------------- PS add*/
+    section.about-us img {
+        margin: 0 auto;
+    }
+
+    section.about-us div.team-leader {
+        margin: 5vh 30%;
+    }
+    /*------------------------- end of PS add*/
 
     section.about-us  .team-leader-box:nth-of-type(3n) {
         margin: 0 auto
