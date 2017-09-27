@@ -31,7 +31,7 @@
 </head>
 <body data-spy="scroll" data-target="spyNav">>
 
-<section id="spyNav" class="navigation">
+<div id="spyNav" class="navigation">
     <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">
@@ -48,14 +48,12 @@
                     <li><a id="newsletter" href="#newsletterDestination">Newsletter</a></li>
                     <li>
                         <div class="btn-group">
-                            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <a href="index_gb.html"><img src="images/language-gb.png"></a>
+                            <div role="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <a href="index_gb.html"><img src="images/language-gb.png" alt="GB-flag"></a>
                                 <span class="caret"></span>
-                            </button>
+                            </div>
                             <ul class="dropdown-menu">
-                                <a href="index.html"><img src="images/language-pl.png"></a>
-
-                                <!--<a href="index-gb.html"><img src="images/language-gb.png"></a>-->
+                                <li><a href="index.html"><img src="images/language-pl.png" alt="PL-flag"></a></li>
                             </ul>
                         </div>
                     </li>
@@ -65,7 +63,8 @@
         <a id="slideTopBtn">
             <span class="glyphicon glyphicon-arrow-up"></span>
         </a>
-    </nav></section>
+    </nav>
+</div>
 
 <section class="hero">
     <div class="wrapper">

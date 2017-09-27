@@ -18,11 +18,11 @@ body {
 
 /* ----- section navigation ----- */
 
-section.navigation .company-logo:hover {
+div.navigation .company-logo:hover {
     cursor: pointer;
 }
 
-section.navigation .navbar-default {
+div.navigation .navbar-default {
     background-color: #fff;
     border-color: #fff;
     -webkit-box-shadow: 0px 1px 60px 0px rgba(0, 0, 0, 0.75);
@@ -30,33 +30,33 @@ section.navigation .navbar-default {
     box-shadow: 0px 1px 60px 0px rgba(0, 0, 0, 0.75);
 }
 
-section.navigation .navbar-default ul li {
+div.navigation .navbar-default ul li {
     position: relative;
 }
 
 @media screen and (max-width: 767px) {
-    section.navigation .navbar-default ul li {
+    div.navigation .navbar-default ul li {
         text-align: center;
         line-height: 50px;
     }
 }
 
-section.navigation .navbar-default div div ul li a {
+div.navigation .navbar-default div div ul li a {
     color: #14213d;
     line-height: 74px;
     padding: 0 15px;
     font-size: 1.2em;
 }
 
-section.navigation .navbar-default div div ul li:last-child a {
+div.navigation .navbar-default div div ul li:last-child a {
     line-height: 40px;
 }
 
-section.navigation .navbar-default div div ul li > a:hover {
+div.navigation .navbar-default div div ul li > a:hover {
     color: #14213d;
 }
 
-section.navigation .navbar-default div div ul li > a::after {
+div.navigation .navbar-default div div ul.nav li > a::after {
     content: '';
     position: absolute;
     top: 73px;
@@ -67,81 +67,81 @@ section.navigation .navbar-default div div ul li > a::after {
     transition: width .3s;
 }
 
-section.navigation .navbar-default a:hover::after {
+div.navigation .navbar-default a:hover::after {
     width: 100%;
 }
 
 @media screen and (max-width: 767px) {
-    section.navigation .navbar-default div div ul li > a {
+    div.navigation .navbar-default div div ul li > a {
         line-height: 55px;
     }
 
-    section.navigation .navbar-default div div ul li > a::after {
+    div.navigation .navbar-default div div ul li > a::after {
         top: 50px;
     }
 }
 
-section.navigation .navbar-header > span {
+div.navigation .navbar-header > span {
     line-height: 74px;
     font-size: 2em;
     color: #14213d;
 }
 
-section.navigation .navbar-header span:hover {
+div.navigation .navbar-header span:hover {
     cursor: pointer;
 }
 
-section.navigation h2 {
+div.navigation h2 {
     display: inline-block;
 }
 
-section.navigation nav div div ul {
+div.navigation nav div div ul {
     min-width: 60px;
 }
 
-section.navigation nav div div ul li div a {
+div.navigation nav div div ul li div a {
     line-height: 46px;
 }
 
-section.navigation nav div div ul li div button {
+div.navigation nav div div ul li div div.btn {
     min-width: 55px;
     margin-top: 15px;
 }
 
 @media screen and (max-width: 767px) {
-    section.navigation nav div div ul li div button {
+    div.navigation nav div div ul li div div.btn {
         margin-top: 0;
     }
 }
 
-section.navigation nav div div ul li div ul a {
+div.navigation nav div div ul li div ul a {
     line-height: 40px !important;
     text-align: center;
     display: block;
 }
 
-section.navigation .btn-default {
+div.navigation .btn-default {
     border-color: #fff;
     padding: 0;
 }
 
-section.navigation .btn-default:active:hover,
-section.navigation .btn-default.active:hover,
-section.navigation .open > .dropdown-toggle.btn-default:hover,
-section.navigation .btn-default:active:focus,
-section.navigation .btn-default.active:focus,
-section.navigation .open > .dropdown-toggle.btn-default:focus,
-section.navigation .btn-default:active.focus,
-section.navigation .btn-default.active.focus,
-section.navigation.open > .dropdown-toggle.btn-default.focus,
-section.navigation button:hover,
-section.navigation .btn-default:active,
-section.navigation .btn-default.active,
-section.navigation.open > .dropdown-toggle.btn-default {
+div.navigation .btn-default:active:hover,
+div.navigation .btn-default.active:hover,
+div.navigation .open > .dropdown-toggle.btn-default:hover,
+div.navigation .btn-default:active:focus,
+div.navigation .btn-default.active:focus,
+div.navigation .open > .dropdown-toggle.btn-default:focus,
+div.navigation .btn-default:active.focus,
+div.navigation .btn-default.active.focus,
+div.navigation.open > .dropdown-toggle.btn-default.focus,
+div.navigation div.btn:hover,
+div.navigation .btn-default:active,
+div.navigation .btn-default.active,
+div.navigation.open > .dropdown-toggle.btn-default {
     background-color: #fff;
 }
 
-section.navigation nav.navbar > a {
+div.navigation nav.navbar > a {
     position: fixed;
     bottom: 5%;
     right: 3%;
@@ -167,11 +167,12 @@ section.navigation nav.navbar > a {
     overflow: hidden;
 }
 
-section.navigation nav.navbar > a:hover {
+
+div.navigation nav.navbar > a:hover {
     transform: scale(1.2);
 }
 
-section.navigation nav.navbar a span {
+div.navigation nav.navbar a span {
     position: absolute;
     animation: linear changeArrowPosition 2s;
     animation-iteration-count: infinite;
