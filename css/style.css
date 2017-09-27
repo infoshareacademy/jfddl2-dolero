@@ -659,7 +659,7 @@ section.about-us {
     margin-bottom: 60px;
 }
 /*-----------------PS add*/
-div#teamShow {
+div#showTeam {
     opacity: 0;
     transition: 2s;
 }

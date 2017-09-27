@@ -82,7 +82,7 @@ function showTeam() {
     const windowPosition = window.pageYOffset;
 
     if(sectionTeamPosition - 400 <= windowPosition)
-        $("div#teamShow").css('opacity', '1');
+        $("#showTeam").css('opacity', '1');
 }
 
 
