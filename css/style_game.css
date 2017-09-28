@@ -1,0 +1,333 @@
+
+.game {
+    height: 100%;
+    width: 100%;
+}
+
+/*MONIKA*/
+/*.row {*/
+/*background-color: transparent;*/
+/*}*/
+
+.col-xs-2 {
+    font-family: Montserrat, sans-serif;
+    font-size: 2em;
+    font-weight: 700;
+    color: mediumblue;
+}
+
+/*.wallet {*/
+/*height:50px;*/
+/*width:120px;*/
+/*background-color: brown;*/
+/*position: fixed;*/
+/*top: 0%;*/
+/*left: 50%;*/
+/*}*/
+
+.cash2 {
+    top: -10%;
+    left: 20% !important;
+}
+
+/*.move {*/
+/*left: 0;*/
+/*}*/
+
+/*}*/
+
+/*.line {*/
+/*width:1px;*/
+/*height: 100px;*/
+/*background-color: black;*/
+/*position: absolute;*/
+/*left:50%;*/
+/*top:23%;*/
+/*!*transform: translate(-50%, -100%);*!*/
+/*z-index: 2;}*/
+/*}*/
+
+/*img {*/
+/*max-width: 100%;*/
+/*max-height: 100%;*/
+/*}*/
+
+/*.pudełka {*/
+/*height:50px;*/
+/*width:120px;*/
+/*background-color: black;*/
+/*position: absolute;*/
+/*top: 20%;*/
+/*left: 90%;*/
+/*}*/
+
+/*#dol4 {*/
+/*left: 40%;*/
+/*background-color: red;*/
+
+/*}*/
+
+/*#dol2 {*/
+/*left: 20%;*/
+/*background-color: purple;*/
+/*}*/
+
+/*.arrow {*/
+/*width: 10px;*/
+/*height: 100px;*/
+/*position: absolute;*/
+/*left: 50%;*/
+/*bottom: 60%;*/
+/*transform: translateX(-50%);*/
+/*background-color: red;}*/
+/*!*transition: 10s all linear;*!*/
+
+/*}*/
+
+/*.wallet {*/
+/*height:50px;*/
+/*width:120px;*/
+/*background-color: brown;*/
+/*position: fixed;*/
+/*top: 10%;*/
+/*left: 50%;*/
+/*}*/
+
+/*ANDRZEJ*/
+body {
+    height: 100vh;
+    /*height: auto;*/
+    background-image: url("../images/SLY_WILI_bank_07.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    overflow: hidden;
+
+}
+
+div.dollars {
+    position: relative;
+    margin-left: 0;
+    left: -1%;
+    top: 24%;
+    z-index: 3;
+}
+
+div.wallet {
+    position: relative;
+    margin-left: 10%;
+    margin-right: 15%;
+    /*top: 4%;*/
+}
+
+div .wall1 {
+    border-radius: 10%;
+    margin-top: 0;
+    height: 12vw;
+    width: 14vw;
+    background-image: url("../images/a829a2c10034aabefa12e9a2b5a1548a.png");
+    background-size: cover;
+    animation: moveLeftToRight 12s 2s linear infinite alternate;
+    transition: all 1s ease;
+    position: absolute;
+    left: 0;
+
+}
+
+.vigwam {
+    position: absolute;
+    margin-left: 0;
+    left: 82%;
+    top: 34%;
+    z-index: 3;
+}
+
+.indian {
+    height: 22vw;
+    width: 19vw;
+    background-image: url("../images/indian_icon_by_slamiticon-d5zbn3s.png");
+    background-size: cover;
+    transition: all 1s ease;
+}
+
+@keyframes moveLeftToRight {
+    0% {
+        left: 0%;
+    }
+    50% {
+        left: 100%;
+    }
+    75% {
+        left: 50%;
+    }
+    100% {
+        left: 0%;
+    }
+}
+
+div .dol1 {
+    margin-top: 10%;
+    height: 6vw;
+    width: 5.5vw;
+    background-image: url("../images/050c9b508ccbac03368e31a12fd2857c.png");
+    background-size: cover;
+    /*animation: moveLeftToRight 8s linear infinite;*/
+    /*transition: all 1s ease;*/
+    position: absolute;
+    left: 0;
+}
+
+/*@keyframes moveLeftToRight {*/
+/*0%   { left: -100px; }*/
+/*100% { left: 100%; }*/
+/*}*/
+
+div .dol2 {
+    margin-top: 10%;
+    height: 6vw;
+    width: 5.5vw;
+    background-image: url("../images/animated-clipart-dollar-free-sign-17.png");
+    background-size: cover;
+    /*animation: moveLeftToRight 8s 1s linear infinite;*/
+    position: absolute;
+    left: 0;
+}
+
+/*@keyframes moveLeftToRight {*/
+/*0%   { left: -100px; }*/
+/*100% { left: 100%; }*/
+/*}*/
+div .dol3 {
+    margin-top: 10%;
+    height: 6vw;
+    width: 10vw;
+    background-image: url("../images/dollar_bill_clip_art_by_redflyninja-d9699vi.png");
+    background-size: cover;
+    /*animation: moveLeftToRight 8s 2s linear infinite;*/
+    position: absolute;
+    left: 0;
+}
+
+/*}*/
+/*@keyframes moveLeftToRight {*/
+/*0% {  left: -100px;  }*/
+/*100% {  left: 100%;  }*/
+/*}*/
+
+div .dol4 {
+    margin-top: 9%;
+    height: 7vw;
+    width: 7vw;
+    background-image: url("../images/Money_Bag_icon.png");
+    background-size: cover;
+    /*animation: moveLeftToRight 8s 3s linear infinite;*/
+    position: absolute;
+    left: 0;
+}
+
+div .dol5 {
+    margin-top: 10%;
+    height: 7vw;
+    width: 7vw;
+    background-image: url("../images/Coin.png");
+    border-radius: 100%;
+    background-size: cover;
+    /*animation: moveLeftToRight 8s 3s linear infinite;*/
+    position: absolute;
+    left: 0;
+}
+
+div.bilding {
+
+    position: absolute;
+    margin-left: 0px;
+    left: -1%;
+    top: 40%;
+    z-index: 3;
+}
+
+div .bank {
+
+    height: 18vw;
+    width: 13vw;
+    background-image: url("../images/150px-WW_Bank.png");
+    background-size: cover;
+}
+
+.pacman {
+    background: red;
+    height: 5%;
+    width: 5%;
+    position: absolute;
+    right: 0%;
+    transition: all 8s linear;
+}
+
+/*Piotrek*/
+
+#crossbow {
+    width: 8vw;
+    height: auto;
+    position: fixed;
+    left: 46.5%;
+    bottom: 1vh;
+}
+
+.arrow {
+    width: 1vw;
+    height: 8vw;
+    position: fixed;
+    left: 50%;
+    bottom: 1vh;
+    background: url('../images/spear_small.svg');
+    background-repeat: no-repeat;
+
+}
+
+div.arrows div.arrow div.line {
+    width: 1px;
+    height: 1px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    background-color: red;
+
+}
+
+section.game div.navbar div {
+    text-align: center;
+    color: #000;
+    text-shadow: 2px 2px #ffb917;
+
+}
+
+.red {
+    color: #ff1c1a !important;
+    text-shadow: 1px 1px #37000a !important;
+    transition: .5s;
+}
+
+.bum {
+    color: #040300;
+    animation: pointAnimation 1.3s ease-in;
+    position: absolute;
+    left: 53%;
+    top: 36%;
+
+}
+
+@keyframes pointAnimation {
+    0% {
+        font-size: 0;
+        opacity: 0
+    }
+    50% {
+        font-size: 100px;
+        opacity: 1;
+    }
+
+    99% {
+        font-size: 0;
+        /*visibility: hidden;*/
+    }
+}
