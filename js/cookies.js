@@ -9,7 +9,7 @@ $(document).ready(function(){
             cookieContent = 'Ta strona korzysta z ciasteczek (cookies)';
             buttonCookieContent = "Rozumiem";
         } else {
-            cookieContent = 'TThis page is using cookies';
+            cookieContent = 'This page is using cookies';
             buttonCookieContent = "I understand";
         }
 
