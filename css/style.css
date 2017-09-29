@@ -68,6 +68,11 @@ body {
 /*end of cookies------------------------------------------*/
 /* ----- section navigation ----- */
 
+
+ div.mainLogo {
+    margin-top:50px;
+ }
+
 div.navigation .company-logo:hover {
     cursor: pointer;
 }
