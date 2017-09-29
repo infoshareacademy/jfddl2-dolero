@@ -12,7 +12,6 @@ $(document).ready(function(){
             cookieContent = 'This page is using cookies';
             buttonCookieContent = "I understand";
         }
-
     }
 
     setTimeout(function(){
