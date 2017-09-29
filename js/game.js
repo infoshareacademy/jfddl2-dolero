@@ -1,13 +1,25 @@
 var moneySpeed = 8000;
 var wallet;
-var name;
 var movingArrow;
 var loadedArrow;
 
 $('#modal-begin').modal()
 // $('').text(name)
 
+var $name = $('#name')[0];
+var $startGame = $('#startGame')[0];
 
+$startGame.addEventListener('click', function(){
+    $userName = $('#usr')[0]['value'];
+    console.log($userName);
+    $name.innerText =  $userName;
+});
+
+// var startGame = document.querySelector("#startGame");
+// startGame.addEventListener('click', function(){
+// var userName = document.querySelector('#usr')['value'];
+//     console.log(userName)
+// })
 
 // COMMENT you run that function only once it can be IIFE
 var tableColName = ['Place', 'Name', 'Points'];
