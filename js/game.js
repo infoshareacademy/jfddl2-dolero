@@ -4,6 +4,11 @@ var name;
 var movingArrow;
 var loadedArrow;
 
+$('#modal-begin').modal()
+// $('').text(name)
+
+
+
 // COMMENT you run that function only once it can be IIFE
 var tableColName = ['Place', 'Name', 'Points'];
 var seconds = 12;
@@ -105,7 +110,4 @@ $('#playAgain').click(function () {
 
 
 });
-$('#modal-begin').append($table)
-$('#play').click(function (){
-    location.reload();
-    });
+
