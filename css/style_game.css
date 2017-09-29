@@ -16,82 +16,31 @@
     color: mediumblue;
 }
 
-/*.wallet {*/
-/*height:50px;*/
-/*width:120px;*/
-/*background-color: brown;*/
-/*position: fixed;*/
-/*top: 0%;*/
-/*left: 50%;*/
-/*}*/
+.col-xs-2 {
+    font-family: Montserrat, sans-serif;
+    font-size: 2em;
+    font-weight: 700;
+    color: mediumblue;
+}
+.col-xs-6 {
+    font-family: Montserrat, sans-serif;
+    font-size: 2em;
+    font-weight: 700;
+    color: mediumblue;
+}
+
+.modal-dialog{
+    background-color: white;
+}
+
+.coin_in {
+    width:60px;
+}
 
 .cash2 {
     top: -10%;
     left: 20% !important;
 }
-
-/*.move {*/
-/*left: 0;*/
-/*}*/
-
-/*}*/
-
-/*.line {*/
-/*width:1px;*/
-/*height: 100px;*/
-/*background-color: black;*/
-/*position: absolute;*/
-/*left:50%;*/
-/*top:23%;*/
-/*!*transform: translate(-50%, -100%);*!*/
-/*z-index: 2;}*/
-/*}*/
-
-/*img {*/
-/*max-width: 100%;*/
-/*max-height: 100%;*/
-/*}*/
-
-/*.pudełka {*/
-/*height:50px;*/
-/*width:120px;*/
-/*background-color: black;*/
-/*position: absolute;*/
-/*top: 20%;*/
-/*left: 90%;*/
-/*}*/
-
-/*#dol4 {*/
-/*left: 40%;*/
-/*background-color: red;*/
-
-/*}*/
-
-/*#dol2 {*/
-/*left: 20%;*/
-/*background-color: purple;*/
-/*}*/
-
-/*.arrow {*/
-/*width: 10px;*/
-/*height: 100px;*/
-/*position: absolute;*/
-/*left: 50%;*/
-/*bottom: 60%;*/
-/*transform: translateX(-50%);*/
-/*background-color: red;}*/
-/*!*transition: 10s all linear;*!*/
-
-/*}*/
-
-/*.wallet {*/
-/*height:50px;*/
-/*width:120px;*/
-/*background-color: brown;*/
-/*position: fixed;*/
-/*top: 10%;*/
-/*left: 50%;*/
-/*}*/
 
 /*ANDRZEJ*/
 body {

@@ -96,9 +96,16 @@ function createRanking(dataArray, tableColName) {
         }
 
     })
+
     $('#ranking').append($table)
 }
 
 $('#playAgain').click(function () {
     location.reload();
+
+
 });
+$('#modal-begin').append($table)
+$('#play').click(function (){
+    location.reload();
+    });

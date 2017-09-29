@@ -1,4 +1,4 @@
-$('#product-modal').on ('hidden.bs.modal', function (e) {
+$('#modal-begin').on ('hidden.bs.modal', function (e) {
     alert('Modal is just hidden!');
 });
 //     backdrop: true,
