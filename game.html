@@ -31,16 +31,16 @@
     <div class="navbar">
         <div class="container">
             <div class="row">
-                <div class="col-xs-2">
-                    <div>NAME</div>
+                <div class="col-xs-6">
+                    <div>Player name</div>
                     <div id="name"></div>
                 </div>
-                <div class="col-xs-offset-6 col-xs-2">
-                    <div>POINTS</div>
+                <div class="col-xs-offset- col-xs-2">
+                    <div>Cash</div>
                     <div id="results">0</div>
                 </div>
                 <div class="col-xs-2">
-                    <div>TIME</div>
+                    <div>Time</div>
                     <div id="seconds">60</div>
                 </div>
             </div>
@@ -74,24 +74,22 @@
 
 </section>
 <section id="modal-begin" class="modal fade" data-keyboard="false" data-backdrop="static">
-    <div class="modal-dialog" style="background-color:white;" modal-dialog role="document">
-        <div class="modal-content"></div>
+    <div class="modal-dialog modal-lg" style="background-color:white;" modal-dialog role="document">
         <div class="modal-header">
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
             </button>
             <div class="text-center">
-                <h3 class="modal-title">START THE GAME</h3>
+                <h3 class="modal-title"><img src="images/Coin.png" class="coin_in"> START THE GAME <img
+                        src="images/Coin.png" class="coin_in"></h3>
+
             </div>
         </div>
         <div class="modal-body">
             <div class="container-fluid">
                 <div class="row">
                     <div class="text-center">
-                        <img src="images/Coin.png" class="coin_in">
-                        <br><br>
-                        <div class="form-group" id="imie" for="usr">Name:
-                            <!--<label for="usr" >Name:</label>-->
+                        <div class="form-group" id="imie" for="usr">Player name:
                             <input type="text" class="form-control" id="usr">
                         </div>
                         <div class="btn-group-vertical" role="group">
@@ -104,39 +102,72 @@
                         <h3>How to play</h3>
                     </div>
                 </div>
-                <div class="col-md-4" style="background-color:lavenderblush;">
-                    <div class="text-center">
-                        <div class="text-center">
-                            <h4>1</h4>
-                            <p>zbierz jak najwięcej oszczędności</p>
-                            <img src="images/Coin.png" class="coin_in">
-                            <br><br>
+                <div>
+                    <div class="panel-group" id="accordion">
+                        <div class="panel panel-default">
+                            <div class="panel-heading text-center">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">STEP 1</a>
+                                </h4>
+                            </div>
+                            <div id="collapse1" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <div class="text-center">
+                                        <p>Gra podzielona jest na rundy. Każda runda dedykowana jest dla jednego gracza.
+                                            Gracz powinien zebrać jak najwięcej pieniędzy, strzelając w pojawiające się
+                                            symbole: </p>
+                                        <span>
+                                        <img src="images/Coin.png" class="coin_in">
+                                            <img src="images/Money_Bag_icon.png" class="coin_in">
+                                            <img src="images/animated-clipart-dollar-free-sign-17.png" class="coin_in">
+                                            <img src="images/dollar_bill_clip_art_by_redflyninja-d9699vi.png"
+                                                 class="coin_in">
+                                            <img src="images/050c9b508ccbac03368e31a12fd2857c.png" class="coin_in">
+                                        </span>
+                                        <p> każdy symbol ma swoją wartość
+                                            ustrzelone pieniądze gromadzą się na Twoim koncie </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading text-center">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">STEP 2</a>
+                                </h4>
+                            </div>
+                            <div id="collapse2" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <div class="text-center">
+                                        <p>Gdy gracz trafi jednocześnie w symbol pieniądza i portfel zdobywa premię </p>
+                                        <img src="images/Coin.png" class="coin_in">
+                                        <span class="glyphicon glyphicon-plus-sign" aria-hidden="true"></span>
+                                        <img src="images/a829a2c10034aabefa12e9a2b5a1548a.png" class="coin_in">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading text-center">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">STEP 3</a>
+                                </h4>
+                            </div>
+                            <div id="collapse3" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <div class="text-center">
+                                        <p>Gracz z największą zdobytą kwotą wygrywa pojedynek </p>
+                                        <img src="images/Money_Bag_icon.png" class="coin_in">
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4" style="background-color:lightpink;">
-                    <div class="text-center">
-                        <h4>2</h4>
-                        <p>zbierz jak najwięcej oszczędności</p>
-                        <img src="images/Coin.png" class="coin_in">
-                        <br><br>
-                    </div>
-                </div>
-                <div class="col-md-4" style="background-color:lightseagreen;">
-                    <div class="text-center">
-                        <h4>3</h4>
-                        <p>zbierz jak najwięcej oszczędności</p>
-                        <img src="images/Money_Bag_icon.png" class="coin_in">
-                        <br><br>
-                    </div>
-                </div>
+
             </div>
         </div>
-    </div>
 
-    <!--<div class="modal-footer">-->
-    <!--<button type="button" class="btn">Play againg</button><button type="button" class="btn">Ranking</button>-->
-    <!--</div>-->
 </section>
 <section class="ranking">
     <div class="modal" id="modalRanking" data-keyboard="false" data-backdrop="static">
@@ -153,7 +184,8 @@
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-primary" id="playAgain">Play again</button>
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <a href="index.html" role="button" class="btn btn-primary" id="goBack2">Go Back
+                    </a>
                 </div>
             </div>
         </div>
