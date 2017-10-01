@@ -31,7 +31,10 @@
     <div class="navbar">
         <div class="container">
             <div class="row">
-                <div id="name" class="col-xs-2">NAME</div>
+                <div class="col-xs-2">
+                    <div>NAME</div>
+                    <div id="name"></div>
+                </div>
                 <div class="col-xs-offset-6 col-xs-2">
                     <div>POINTS</div>
                     <div id="results">0</div>
@@ -61,7 +64,7 @@
     <div class="arrows">
         <!--<img class="arrow" alt="arrow" src="images/spear_small.svg">-->
         <!-- <div class="arrow"> -->
-            <!--<div class="line"></div>-->
+        <!--<div class="line"></div>-->
         <!-- </div> -->
     </div>
 
@@ -91,7 +94,13 @@
                             <!--<label for="usr" >Name:</label>-->
                             <input type="text" class="form-control" id="usr">
                         </div>
-                        <button type="button" class="btn btn-primary" class="close" data-dismiss="modal" aria-label="Close" id="startGame">PLAY</button>
+                        <div class="btn-group-vertical" role="group">
+                            <button type="button" class="btn btn-primary" class="close" data-dismiss="modal"
+                                    aria-label="Close" id="startGame">PLAY
+                            </button>
+                            <a href="index.html" role="button" class="btn btn-link" id="goBack">Go Back
+                            </a>
+                        </div>
                         <h3>How to play</h3>
                     </div>
                 </div>
