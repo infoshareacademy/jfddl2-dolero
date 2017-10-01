@@ -10,9 +10,10 @@ var $name = $('#name')[0];
 var $startGame = $('#startGame')[0];
 
 $startGame.addEventListener('click', function(){
-    $userName = $('#usr')[0]['value'];
+    var $userName = $('#usr')[0]['value'];
     console.log($userName);
     $name.innerText =  $userName;
+    timer($userName);
 });
 
 // var startGame = document.querySelector("#startGame");
@@ -23,7 +24,7 @@ $startGame.addEventListener('click', function(){
 
 // COMMENT you run that function only once it can be IIFE
 var tableColName = ['Place', 'Name', 'Points'];
-var seconds = 12;
+var seconds = 5;
 wallet = new Wallet();
 wallet.init();
 var ranking = JSON.parse(localStorage.getItem('ranking') || '[]');
