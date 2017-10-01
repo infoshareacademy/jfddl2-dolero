@@ -70,7 +70,7 @@ body {
 
 
  div.mainLogo {
-    margin-top:50px;
+    border-bottom: 20px;
  }
 
 div.navigation .company-logo:hover {
