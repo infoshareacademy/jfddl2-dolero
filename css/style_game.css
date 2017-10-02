@@ -282,3 +282,12 @@ section.game div.navbar div {
         /*visibility: hidden;*/
     }
 }
+
+#ranking tr {
+    height: 2em;
+}
+
+#ranking td {
+    width: 30%;
+    margin: auto 3%;
+}

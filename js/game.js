@@ -24,7 +24,7 @@ $startGame.addEventListener('click', function(){
 
 // COMMENT you run that function only once it can be IIFE
 var tableColName = ['Place', 'Name', 'Points'];
-var seconds = 60;
+var seconds = 5;
 wallet = new Wallet();
 wallet.init();
 var ranking = JSON.parse(localStorage.getItem('ranking') || '[]');
